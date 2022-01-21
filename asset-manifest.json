@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.da42f528.css",
-    "main.js": "/static/js/main.519e048b.js",
+    "main.js": "/static/js/main.4ae47368.js",
     "static/media/thp_immo.png": "/static/media/thp_immo.1f36dced5ab17ea893a6.png",
+    "static/media/movie_festival.png": "/static/media/movie_festival.e35d833360d45712f608.png",
     "static/media/feedtruck.png": "/static/media/feedtruck.45f7589263deac0255ab.png",
     "static/media/chalet_and_caviar.png": "/static/media/chalet_and_caviar.54c74a275719404be096.png",
     "static/media/gossip_project.png": "/static/media/gossip_project.112f8ac1a77fb605c6fb.png",
@@ -42,10 +43,10 @@
     "static/media/circle.svg": "/static/media/circle.525dbfe62cde85ac0da7ffc4d1a69e2a.svg",
     "index.html": "/index.html",
     "main.da42f528.css.map": "/static/css/main.da42f528.css.map",
-    "main.519e048b.js.map": "/static/js/main.519e048b.js.map"
+    "main.4ae47368.js.map": "/static/js/main.4ae47368.js.map"
   },
   "entrypoints": [
     "static/css/main.da42f528.css",
-    "static/js/main.519e048b.js"
+    "static/js/main.4ae47368.js"
   ]
 }
