@@ -22,7 +22,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="app">
       <Router>
         <DarkMode.Provider value={{ darkMode, setDarkMode: switchMode }}>
           <Navigation />
