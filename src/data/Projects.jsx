@@ -11,7 +11,7 @@ const projects = [
     img: movie_festival,
     url: "https://mathieuparadis.github.io/Boston_movie_festival/",
     stack: "HTML, CSS, Javascript",
-    description: "Website for the Watch it Outside - Boston edition, an outdoor movie festival taking place in Boston during summer."
+    description: "Watch it Outside - Boston edition is an outdoor movie festival taking place in Boston during summer."
   },
   {
     title: "Chalet and Caviar",
