@@ -1,3 +1,4 @@
+import move_and_groove from '../assets/images/projects/move_and_groove.png';
 import movie_festival from '../assets/images/projects/movie_festival.png';
 import chalet_and_caviar_screenshot from '../assets/images/projects/chalet_and_caviar.png';
 import follownut_screenshot from '../assets/images/projects/follownut.png';
@@ -6,6 +7,13 @@ import feedtruck_screenshot from '../assets/images/projects/feedtruck.png';
 import gossip_project_screenshot from '../assets/images/projects/gossip_project.png';
 
 const projects = [
+  {
+    title: "Moove and Groove",
+    img: move_and_groove,
+    url: "https://moove-and-groove.herokuapp.com/",
+    stack: "JavaScript, Ruby, Ruby on Rails, PostgreSQL",
+    description: "Move and Groove is a sport tracking app allowing the user to record his physical activity."
+  },
   {
     title: "Watch it Outside - Boston edition",
     img: movie_festival,
