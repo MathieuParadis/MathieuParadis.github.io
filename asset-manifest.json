@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.b73126fb.css",
-    "main.js": "/static/js/main.8536deac.js",
+    "main.js": "/static/js/main.3e153e3a.js",
     "static/media/move_and_groove.png": "/static/media/move_and_groove.e035e3a7bc84a6b20851.png",
     "static/media/thp_immo.png": "/static/media/thp_immo.1f36dced5ab17ea893a6.png",
     "static/media/movie_festival.png": "/static/media/movie_festival.e35d833360d45712f608.png",
+    "static/media/boulder_bike_tour.png": "/static/media/boulder_bike_tour.3d9fdf74b1e521b85efc.png",
     "static/media/feedtruck.png": "/static/media/feedtruck.45f7589263deac0255ab.png",
     "static/media/chalet_and_caviar.png": "/static/media/chalet_and_caviar.54c74a275719404be096.png",
     "static/media/gossip_project.png": "/static/media/gossip_project.112f8ac1a77fb605c6fb.png",
@@ -44,10 +45,10 @@
     "static/media/circle.svg": "/static/media/circle.525dbfe62cde85ac0da7ffc4d1a69e2a.svg",
     "index.html": "/index.html",
     "main.b73126fb.css.map": "/static/css/main.b73126fb.css.map",
-    "main.8536deac.js.map": "/static/js/main.8536deac.js.map"
+    "main.3e153e3a.js.map": "/static/js/main.3e153e3a.js.map"
   },
   "entrypoints": [
     "static/css/main.b73126fb.css",
-    "static/js/main.8536deac.js"
+    "static/js/main.3e153e3a.js"
   ]
 }
