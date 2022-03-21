@@ -1,3 +1,4 @@
+import boulder_bike_tour from '../assets/images/projects/boulder_bike_tour.png';
 import move_and_groove from '../assets/images/projects/move_and_groove.png';
 import movie_festival from '../assets/images/projects/movie_festival.png';
 import chalet_and_caviar_screenshot from '../assets/images/projects/chalet_and_caviar.png';
@@ -7,6 +8,13 @@ import feedtruck_screenshot from '../assets/images/projects/feedtruck.png';
 import gossip_project_screenshot from '../assets/images/projects/gossip_project.png';
 
 const projects = [
+  {
+    title: "Boulder Bike Tour",
+    img: boulder_bike_tour,
+    url: "https://co-boulder-bike-tour.herokuapp.com/",
+    stack: "JavaScript, React, Sass, Ruby on Rails, PostgreSQL",
+    description: "Website for the Boulder Bike Tour, a prestigious bike race taking place in Colorado at the foot of the Rocky Mountains"
+  },
   {
     title: "Moove and Groove",
     img: move_and_groove,
