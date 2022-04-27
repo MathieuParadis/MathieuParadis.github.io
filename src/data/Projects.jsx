@@ -1,3 +1,4 @@
+import helping_hand from '../assets/images/projects/helping_hand.png';
 import boulder_bike_tour from '../assets/images/projects/boulder_bike_tour.png';
 import move_and_groove from '../assets/images/projects/move_and_groove.png';
 import movie_festival from '../assets/images/projects/movie_festival.png';
@@ -8,6 +9,13 @@ import feedtruck_screenshot from '../assets/images/projects/feedtruck.png';
 import gossip_project_screenshot from '../assets/images/projects/gossip_project.png';
 
 const projects = [
+  {
+    title: "Helping Hand",
+    img: helping_hand,
+    url: "https://helpping-hand.herokuapp.com/",
+    stack: "JavaScript, React, Sass, Ruby on Rails, PostgreSQL",
+    description: "Website still in development..."
+  },
   {
     title: "Boulder Bike Tour",
     img: boulder_bike_tour,
