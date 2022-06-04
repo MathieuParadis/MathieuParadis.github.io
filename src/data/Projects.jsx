@@ -14,7 +14,7 @@ const projects = [
     img: helping_hand,
     url: "https://helpping-hand.herokuapp.com/",
     stack: "JavaScript, React, Sass, Ruby on Rails, PostgreSQL",
-    description: "Website still in development..."
+    description: "Helping Hand is an aid platform that connects people in need to willing volunteers in your community.."
   },
   {
     title: "Boulder Bike Tour",
