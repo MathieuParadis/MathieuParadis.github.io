@@ -1,14 +1,21 @@
+import neo_hunt_screenshot from '../assets/images/projects/neo-hunt.png';
 import helping_hand from '../assets/images/projects/helping_hand.png';
 import boulder_bike_tour from '../assets/images/projects/boulder_bike_tour.png';
 import move_and_groove from '../assets/images/projects/move_and_groove.png';
 import movie_festival from '../assets/images/projects/movie_festival.png';
 import chalet_and_caviar_screenshot from '../assets/images/projects/chalet_and_caviar.png';
 import follownut_screenshot from '../assets/images/projects/follownut.png';
-import thp_immo_screenshot from '../assets/images/projects/thp_immo.png';
 import feedtruck_screenshot from '../assets/images/projects/feedtruck.png';
 import gossip_project_screenshot from '../assets/images/projects/gossip_project.png';
 
 const projects = [
+  {
+    title: "Neo Hunt'", 
+    img: neo_hunt_screenshot,
+    url: "https://neo-hunt.herokuapp.com/",
+    stack: "NextJS, TypeScript, Tailwind CSS, graphQL",
+    description: "Neo Hunt is an app displaying popular posts from Product Hunt."
+  },
   {
     title: "Helping Hand",
     img: helping_hand,
@@ -21,7 +28,7 @@ const projects = [
     img: boulder_bike_tour,
     url: "https://co-boulder-bike-tour.herokuapp.com/",
     stack: "JavaScript, React, Sass, Ruby on Rails, PostgreSQL",
-    description: "Website for the Boulder Bike Tour, a prestigious bike race taking place in Colorado at the foot of the Rocky Mountains"
+    description: "Website for the Boulder Bike Tour, a prestigious bike race taking place in Colorado at the foot of the Rocky Mountains."
   },
   {
     title: "Move and Groove",
@@ -50,13 +57,6 @@ const projects = [
     url: "https://follownut.herokuapp.com/",
     stack: "JavaScript, React, Sass, Ruby on Rails, PostgreSQL",
     description: "FollowNut' is a follow up application for nutritionists and their patients."
-  },
-  {
-    title: "THP immo'", 
-    img: thp_immo_screenshot,
-    url: "https://thp-renting.herokuapp.com/",
-    stack: "JavaScript, React, Sass, Ruby on Rails, PostgreSQL",
-    description: "THPimmo is a platform that proposes atypical houses to rent to spend your vacations."
   },
   {
     title: "Feedtruck", 
