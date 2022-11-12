@@ -12,7 +12,7 @@ const projects = [
   {
     title: "Neo Hunt'", 
     img: neo_hunt_screenshot,
-    url: "https://neo-hunt.herokuapp.com/",
+    url: "https://neo-hunt.vercel.app/",
     stack: "NextJS, TypeScript, Tailwind CSS, graphQL",
     description: "Neo Hunt is an app displaying popular posts from Product Hunt."
   },
