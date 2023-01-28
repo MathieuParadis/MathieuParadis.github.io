@@ -3,8 +3,10 @@ import React, { useEffect } from 'react'
 
 const ProjectModal = ({project}) => {
   const closeModal = () => {
-    let modal = document.querySelector('.project-modal')
+    const modal = document.querySelector('.project-modal')
     modal.style.visibility = 'hidden'
+    document.body.style.overflow = 'auto'
+
   }
 
   window.onclick = (event) => {
