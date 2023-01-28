@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.68ae6470.css",
-    "main.js": "/static/js/main.53161d86.js",
+    "main.css": "/static/css/main.a0b6131e.css",
+    "main.js": "/static/js/main.0f3f3437.js",
     "static/media/move_and_groove.png": "/static/media/move_and_groove.e035e3a7bc84a6b20851.png",
     "static/media/movie_festival.png": "/static/media/movie_festival.e35d833360d45712f608.png",
     "static/media/helping_hand.png": "/static/media/helping_hand.33e39541914e516de177.png",
     "static/media/boulder_bike_tour.png": "/static/media/boulder_bike_tour.3d9fdf74b1e521b85efc.png",
     "static/media/feedtruck.png": "/static/media/feedtruck.45f7589263deac0255ab.png",
     "static/media/chalet_and_caviar.png": "/static/media/chalet_and_caviar.54c74a275719404be096.png",
-    "static/media/gossip_project.png": "/static/media/gossip_project.112f8ac1a77fb605c6fb.png",
     "static/media/neo-hunt.png": "/static/media/neo-hunt.7b09e4efa4ca8c6d4fe5.png",
     "static/media/follownut.png": "/static/media/follownut.41252dd6452c9fb5c115.png",
     "static/media/koala.svg": "/static/media/koala.7eaf850b5acb69162521119b4b1720c6.svg",
@@ -45,11 +44,11 @@
     "static/media/circle_outline.svg": "/static/media/circle_outline.880879cc4ef200e79f3abceed1d232ed.svg",
     "static/media/circle.svg": "/static/media/circle.525dbfe62cde85ac0da7ffc4d1a69e2a.svg",
     "index.html": "/index.html",
-    "main.68ae6470.css.map": "/static/css/main.68ae6470.css.map",
-    "main.53161d86.js.map": "/static/js/main.53161d86.js.map"
+    "main.a0b6131e.css.map": "/static/css/main.a0b6131e.css.map",
+    "main.0f3f3437.js.map": "/static/js/main.0f3f3437.js.map"
   },
   "entrypoints": [
-    "static/css/main.68ae6470.css",
-    "static/js/main.53161d86.js"
+    "static/css/main.a0b6131e.css",
+    "static/js/main.0f3f3437.js"
   ]
 }
