@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a0b6131e.css",
-    "main.js": "/static/js/main.203f3695.js",
+    "main.js": "/static/js/main.1573d1d3.js",
     "static/media/move_and_groove.png": "/static/media/move_and_groove.e035e3a7bc84a6b20851.png",
     "static/media/movie_festival.png": "/static/media/movie_festival.e35d833360d45712f608.png",
     "static/media/helping_hand.png": "/static/media/helping_hand.33e39541914e516de177.png",
@@ -41,14 +41,14 @@
     "static/media/linkedin.svg": "/static/media/linkedin.0b77022ee283da0da7ef687bbaf59704.svg",
     "static/media/logo.svg": "/static/media/logo.e18784bc5a6aa53c093581e6b88069a4.svg",
     "static/media/moon.svg": "/static/media/moon.0bb17b07ba8a00f0d74e994029036f63.svg",
+    "index.html": "/index.html",
     "static/media/circle_outline.svg": "/static/media/circle_outline.880879cc4ef200e79f3abceed1d232ed.svg",
     "static/media/circle.svg": "/static/media/circle.525dbfe62cde85ac0da7ffc4d1a69e2a.svg",
-    "index.html": "/index.html",
     "main.a0b6131e.css.map": "/static/css/main.a0b6131e.css.map",
-    "main.203f3695.js.map": "/static/js/main.203f3695.js.map"
+    "main.1573d1d3.js.map": "/static/js/main.1573d1d3.js.map"
   },
   "entrypoints": [
     "static/css/main.a0b6131e.css",
-    "static/js/main.203f3695.js"
+    "static/js/main.1573d1d3.js"
   ]
 }
