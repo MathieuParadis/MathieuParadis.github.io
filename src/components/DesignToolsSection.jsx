@@ -7,6 +7,8 @@ import DarkMode from './context/DarkMode'
 // ASSETS IMPORTS
 import ai from '../assets/logos/ai.svg'
 import ai_dark from '../assets/logos/ai_dark.svg'
+import figma from '../assets/logos/figma.svg'
+import figma_dark from '../assets/logos/figma_dark.svg'
 import ps from '../assets/logos/ps.svg'
 import ps_dark from '../assets/logos/ps_dark.svg'
 
@@ -24,6 +26,10 @@ const CodingLanguageSection = () => {
         <div className='language-tool-box'>
           <img className='language-tool-logo' src={darkMode ? ps_dark : ps} alt='Photoshop logo' />
           <p>Photoshop</p>
+        </div>
+        <div className='language-tool-box'>
+          <img className='language-tool-logo' src={darkMode ? figma_dark : figma} alt='Photoshop logo' />
+          <p>Figma</p>
         </div>
       </div>
     </div>
