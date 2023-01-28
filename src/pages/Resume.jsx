@@ -16,7 +16,8 @@ const Resume = () => {
         <div className='content'>
           <div className='head'>
             <h1><strong>Mathieu Paradis</strong></h1>
-            <p>French Web Developer based between Europe and Asia. Passionate about minimalism, sustainability, coffee and bread; I recently started to learn graphic design</p>
+            <p className='mb-0'>French Web Developer based between Europe and Asia. Passionate about minimalism, sustainability, coffee and bread.</p>
+            <p className='mt-2'>I recently picked on design to develop beautiful and impactful interfaces.</p>
           </div>
           <div className='body d-flex flex-column flex-lg-row'>
             <div className='first-section w-100 w-lg-50'>
