@@ -12,7 +12,7 @@ import logo from '../assets/logos/logo.svg';
 import logo_dark from '../assets/logos/logo_dark.svg';
 
 const Navigation = () => {
-  const { darkMode, setDarkMode } = useContext(DarkMode);
+  const { darkMode } = useContext(DarkMode);
   const location = useLocation();
   const navigate = useNavigate()
 

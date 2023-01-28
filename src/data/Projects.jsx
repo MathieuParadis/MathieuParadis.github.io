@@ -6,7 +6,6 @@ import movie_festival from '../assets/images/projects/movie_festival.png';
 import chalet_and_caviar_screenshot from '../assets/images/projects/chalet_and_caviar.png';
 import follownut_screenshot from '../assets/images/projects/follownut.png';
 import feedtruck_screenshot from '../assets/images/projects/feedtruck.png';
-import gossip_project_screenshot from '../assets/images/projects/gossip_project.png';
 
 const projects = [
   {

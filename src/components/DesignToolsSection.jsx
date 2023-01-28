@@ -11,7 +11,7 @@ import ps from '../assets/logos/ps.svg';
 import ps_dark from '../assets/logos/ps_dark.svg';
 
 const CodingLanguageSection = () => {
-  const { darkMode, setDarkMode } = useContext(DarkMode);
+  const { darkMode } = useContext(DarkMode);
 
   return (
     <div className="languages-tools-section">

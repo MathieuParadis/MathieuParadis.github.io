@@ -23,7 +23,7 @@ const ProjectModal = ({project}) => {
             <img src={project.img} alt={project.title + " illustration"} />
             <p>{project.description}</p>
             <p><strong>Stack:</strong><br></br>{project.stack}</p>
-            <a href={project.url} target="_blank" className="project-link">Visit website</a>
+            <a href={project.url} target="_blank" className="project-link" rel="noreferrer">Visit website</a>
           </>
         )}
       </div>

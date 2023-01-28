@@ -11,7 +11,7 @@ import in_logo from '../assets/logos/linkedin.svg';
 import in_logo_dark from '../assets/logos/linkedin_dark.svg';
 
 const ContactSection = () => {
-  const { darkMode, setDarkMode } = useContext(DarkMode);
+  const { darkMode } = useContext(DarkMode);
   
   return (
     <div className="contact-section">
