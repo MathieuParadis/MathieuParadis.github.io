@@ -21,13 +21,19 @@ const App = () => {
   const switchMode = () => {
     const body = document.querySelector('body')
     body.classList.toggle('dark-mode')
-    // localStorage.setItem('themePreference', String(!darkMode))
+    localStorage.setItem('darkModePreference', String(!darkMode))
     setDarkMode(!darkMode)
   }
 
   useEffect(() => {
     navigate('/')
   }, [])
+
+  // useEffect(() => {
+  //   if (localStorage.getItem('darkModePreference')) {
+  //     switchMode()
+  //   }
+  // }, [])
 
   return (
     <div className='app'>
