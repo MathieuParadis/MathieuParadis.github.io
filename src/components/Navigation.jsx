@@ -21,7 +21,6 @@ const Navigation = () => {
   const navigate = useNavigate()
 
   const refreshPage = () => {
-    
     if (location.pathname === '/') {
       window.location.reload()
     } else {

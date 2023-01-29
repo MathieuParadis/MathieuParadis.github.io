@@ -1,10 +1,12 @@
-// REACT IMPORT
-import React from 'react'
+// REACT IMPORTS
+import React, { useEffect } from 'react'
 
 const ProjectModal = ({project}) => {
   const closeModal = () => {
-    let modal = document.querySelector('.project-modal')
+    const modal = document.querySelector('.project-modal')
     modal.style.visibility = 'hidden'
+    document.body.style.overflow = 'auto'
+
   }
 
   window.onclick = (event) => {
@@ -12,6 +14,18 @@ const ProjectModal = ({project}) => {
     event.target !== document.querySelector('.project-modal-content') &&
     closeModal()
   }
+
+  useEffect(() => {
+    // close modal on esc
+    const handleKeyPress = (e) => {
+      if (e.keyCode === 27) {
+        closeModal()
+      }
+    }
+
+    document.addEventListener('keydown', handleKeyPress)
+    return () => document.removeEventListener('keydown', handleKeyPress)
+  }, [])
 
   return (
     <div className='project-modal'>

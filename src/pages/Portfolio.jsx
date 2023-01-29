@@ -13,8 +13,9 @@ const Portfolio = () => {
 
   const openModal = (project) => {
     setCurrentProject(project)
-    let modal = document.querySelector('.project-modal')
+    const modal = document.querySelector('.project-modal')
     modal.style.visibility = 'visible'
+    document.body.style.overflow = 'hidden'
   }
 
   return (

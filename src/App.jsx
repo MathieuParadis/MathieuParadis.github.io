@@ -1,8 +1,8 @@
 // REACT IMPORTS
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 // REACT-ROUTER-DOM IMPORTS
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Routes, Route, useNavigate } from 'react-router-dom'
 
 // PAGES IMPORTS
 import Home from './pages/Home'
@@ -15,28 +15,37 @@ import Navigation from './components/Navigation'
 import DarkMode from './components/context/DarkMode'
 
 const App = () => {
+  const navigate = useNavigate()
   const [darkMode, setDarkMode] = useState(false)
 
   const switchMode = () => {
     const body = document.querySelector('body')
     body.classList.toggle('dark-mode')
-    // localStorage.setItem('themePreference', String(!darkMode))
+    localStorage.setItem('darkModePreference', String(!darkMode))
     setDarkMode(!darkMode)
   }
 
+  useEffect(() => {
+    navigate('/')
+  }, [])
+
+  // useEffect(() => {
+  //   if (localStorage.getItem('darkModePreference')) {
+  //     switchMode()
+  //   }
+  // }, [])
+
   return (
     <div className='app'>
-      <Router>
-        <DarkMode.Provider value={{ darkMode, setDarkMode: switchMode }}>
-          <Navigation />
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/portfolio' exact='true' element={<Portfolio />} />
-            <Route path='/resume' exact='true' element={<Resume />} />
-            <Route path='/contact' exact='true' element={<Contact />} />
-          </Routes>
-        </DarkMode.Provider>
-      </Router>
+      <DarkMode.Provider value={{ darkMode, setDarkMode: switchMode }}>
+        <Navigation />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/portfolio' exact='true' element={<Portfolio />} />
+          <Route path='/resume' exact='true' element={<Resume />} />
+          <Route path='/contact' exact='true' element={<Contact />} />
+        </Routes>
+      </DarkMode.Provider>
     </div>
   )
 }
