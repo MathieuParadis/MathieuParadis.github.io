@@ -1,8 +1,8 @@
 // REACT IMPORTS
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 
 // REACT-ROUTER-DOM IMPORTS
-import { Routes, Route, useNavigate } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 // PAGES IMPORTS
 import Home from './pages/Home'
@@ -15,7 +15,6 @@ import Navigation from './components/Navigation'
 import DarkMode from './components/context/DarkMode'
 
 const App = () => {
-  const navigate = useNavigate()
   const [darkMode, setDarkMode] = useState(false)
 
   const switchMode = () => {
@@ -24,10 +23,6 @@ const App = () => {
     localStorage.setItem('darkModePreference', String(!darkMode))
     setDarkMode(!darkMode)
   }
-
-  useEffect(() => {
-    navigate('/')
-  }, [])
 
   // useEffect(() => {
   //   if (localStorage.getItem('darkModePreference')) {
