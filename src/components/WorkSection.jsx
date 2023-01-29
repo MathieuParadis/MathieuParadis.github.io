@@ -10,6 +10,12 @@ const WorkSection = () => {
       <h3>WORK EXPERIENCE</h3>
       <div className='content'>
         <ExperienceComponent 
+          title='Frontend developer' 
+          location='Vanyu-Fuji' 
+          date='Aug. 2022 - Present' 
+          description='Developed web applications using React and Redux. Implemented responsive designs. Utilized Git for version control. Wrote efficient code and improved past projects through troubleshooting and refactoring.'   
+        />
+        <ExperienceComponent 
           title='Project Manager' 
           location='Meiyume' 
           date='Aug. 2017 - Jul. 2020' 
