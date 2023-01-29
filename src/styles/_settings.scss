@@ -132,6 +132,7 @@ $shadow-color2-dark: rgba(255, 255, 255, 0.76);
 html {
   border: 3px solid var(--prim-color);
   min-height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;

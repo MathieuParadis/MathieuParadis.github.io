@@ -1,5 +1,5 @@
 // REACT IMPORTS
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 // REACT-ROUTER-DOM IMPORTS
 import { Routes, Route } from 'react-router-dom'
@@ -24,11 +24,17 @@ const App = () => {
     setDarkMode(!darkMode)
   }
 
-  // useEffect(() => {
-  //   if (localStorage.getItem('darkModePreference')) {
-  //     switchMode()
-  //   }
-  // }, [])
+  useEffect(() => {
+    if (localStorage.getItem('darkModePreference')) {
+      const darkModePreference = localStorage.getItem('darkModePreference')
+      setDarkMode(darkModePreference === 'true' ? true : false)
+    }
+  }, [])
+
+  useEffect(() => {
+    const body = document.querySelector('body')
+    darkMode ? body.classList.add('dark-mode') : body.classList.remove('dark-mode')
+  }, [darkMode])
 
   return (
     <div className='app'>
