@@ -8,7 +8,7 @@ import ProjectModal from '../components/ProjectModal'
 // COMPONENTS DATA
 import projects from '../data/Projects'
 
-const Portfolio = () => {
+const Projects = () => {
   const [currentProject, setCurrentProject] = useState(null)
 
   const openModal = (project) => {
@@ -35,4 +35,4 @@ const Portfolio = () => {
   )
 }
 
-export default Portfolio
+export default Projects
