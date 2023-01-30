@@ -17,7 +17,7 @@ const Home = () => {
   const { darkMode } = useContext(DarkMode)
 
   return (
-    <div className='home'>
+    <div className='home page'>
       <div className='d-flex flex-column-reverse align-items-center flex-lg-row justify-content-lg-between'>
         <div className='presentation d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start px-2 px-lg-0'>
           <h1 className='presentation-name'>Hello, I am<br></br><strong>Mathieu Paradis</strong></h1>
