@@ -17,7 +17,7 @@ const HamburgerMenu = () => {
   }
 
   return (
-    <div>
+    <div className=''>
       <div className='hamburger-box' onClick={handleMenu}>
         <span className='span1'></span>
         <span className='span2'></span>
