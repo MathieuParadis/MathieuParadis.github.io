@@ -130,16 +130,18 @@ $shadow-color2-dark: rgba(255, 255, 255, 0.76);
 }
 
 html {
-  // border: 3px solid var(--prim-color);
+  border: 3px solid var(--prim-color);
   height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 body {
-  margin: 20px 45px;
+  margin: 20px 0px;
+  padding: 0px 45px;
   font-family: $font-1;
   background-color: var(--basic-color-white);
   color: var(--sec-color);
