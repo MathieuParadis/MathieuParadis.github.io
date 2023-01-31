@@ -15,7 +15,7 @@ const Contact = () => {
   const { darkMode } = useContext(DarkMode)
 
   return (
-    <div className='contact page'>
+    <div className='contact'>
       <div className='contact-card'>
         <div className='card-left'>
           <h1>Get in touch</h1>
