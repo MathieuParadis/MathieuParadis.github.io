@@ -1,26 +1,15 @@
 .hamburger-box {
-  position: absolute;
+  position: relative;
   height: 32px;
   width: 30px;
-  top: 45px;
-  right: 110px;
+  top: 16px;
+  right: 21px;
   cursor: pointer;
   display: none;
   z-index: 11;
 
   @include mobile_and_tablet {
-    position: absolute;
-    height: 32px;
-    width: 30px;
-    top: 45px;
-    right: 65px;
-    cursor: pointer;
     display: block;
-    z-index: 11;  
-  }
-
-  @include mobile {
-    right: 50px;
   }
 
   .span1, .span2, .span3 {
@@ -75,7 +64,6 @@
     align-items: center;
     transition: all .5s;
 
-
     &.clicked {
       visibility: visible;
       opacity: 0.9;
@@ -98,6 +86,5 @@
 body {
   &.clicked {
     height: 100%;
-    overflow: hidden;
   }
 }
