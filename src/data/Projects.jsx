@@ -26,14 +26,14 @@ const projects = [
   {
     title: 'Boulder Bike Tour',
     img: boulder_bike_tour,
-    url: 'https://co-boulder-bike-tour.herokuapp.com/',
+    url: 'https://github.com/MathieuParadis/boulder-bike-tour',
     stack: 'JavaScript, React, Sass, Ruby on Rails, PostgreSQL',
     description: 'Website for the Boulder Bike Tour, a prestigious bike race taking place in Colorado at the foot of the Rocky Mountains.'
   },
   {
     title: 'Move and Groove',
     img: move_and_groove,
-    url: 'https://moove-and-groove.herokuapp.com/',
+    url: 'https://github.com/MathieuParadis/fitness_tracker',
     stack: 'JavaScript, Ruby, Ruby on Rails, PostgreSQL',
     description: 'Move and Groove is a sport tracking app allowing the user to record his physical activity.'
   },
