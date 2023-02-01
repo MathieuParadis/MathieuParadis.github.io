@@ -131,19 +131,31 @@ $shadow-color2-dark: rgba(255, 255, 255, 0.76);
 
 html {
   border: 3px solid var(--prim-color);
-  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 body {
-  margin: 20px 45px;
+  margin: 20px 0px;
+  padding: 0px 45px;
   font-family: $font-1;
   background-color: var(--basic-color-white);
   color: var(--sec-color);
   width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100%;
+}
+
+#root, .app {
   height: 100%;
 }
 

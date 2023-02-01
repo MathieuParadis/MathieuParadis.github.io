@@ -7,7 +7,8 @@ import { Routes, Route } from 'react-router-dom'
 // PAGES IMPORTS
 import Home from './pages/Home'
 import Contact from './pages/Contact'
-import Portfolio from './pages/Portfolio'
+import Designs from './pages/Designs'
+import Projects from './pages/Projects'
 import Resume from './pages/Resume'
 
 // COMPONENTS IMPORTS
@@ -42,7 +43,8 @@ const App = () => {
         <Navigation />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/portfolio' exact='true' element={<Portfolio />} />
+          <Route path='/projects' exact='true' element={<Projects />} />
+          <Route path='/designs' exact='true' element={<Designs />} />
           <Route path='/resume' exact='true' element={<Resume />} />
           <Route path='/contact' exact='true' element={<Contact />} />
         </Routes>

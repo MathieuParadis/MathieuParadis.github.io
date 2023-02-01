@@ -36,7 +36,8 @@ const Navigation = () => {
       <div className='d-flex flex-row justify-content-between'>
         <div className='nav-links pe-4'>
           <NavLink exact='true' to='/'>Home</NavLink>
-          <NavLink exact='true' to='/portfolio'>Portfolio</NavLink>
+          <NavLink exact='true' to='/projects'>Projects</NavLink>
+          <NavLink exact='true' to='/designs'>Designs</NavLink>
           <NavLink exact='true' to='/resume'>Resume</NavLink>
           <NavLink exact='true' to='/contact'>Contact</NavLink>
         </div>

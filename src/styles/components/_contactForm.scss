@@ -10,6 +10,8 @@
   }
 
   .form-content {
+    width: 100%;
+    
     input, textarea {
       width: 100%;
       padding: 5px 15px;
@@ -141,10 +143,13 @@
     border-radius: 25px;
 
     &:hover {
-      transform: scale(1.1);
+      // transform: scale(1.1);
+      color: var(--basic-color-light);
+      background-color: var(--prim-color);;
+    }
+
+    &:focus {
+      outline: none;
     }
   }
 }
-
-
-
