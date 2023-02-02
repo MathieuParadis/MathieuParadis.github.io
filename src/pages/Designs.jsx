@@ -6,7 +6,9 @@ import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 
 // COMPONENTS IMPORTS
+import IllustrationsContainer from '../components/IllustrationsContainer'
 import LogosContainer from '../components/LogosContainer'
+import PostersContainer from '../components/PostersContainer'
 
 const Designs = () => {
 
@@ -25,10 +27,10 @@ const Designs = () => {
           <LogosContainer />
         </Tab>
         <Tab eventKey="events" title="Event posters">
-          posters here
+          <PostersContainer />
         </Tab>
         <Tab eventKey="illustrations" title="Illustrations">
-          illustrations here
+          <IllustrationsContainer />
         </Tab>
       </Tabs> 
       </div>
