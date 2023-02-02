@@ -20,7 +20,7 @@ const projects = [
   {
     title: 'Helping Hand',
     img: helping_hand,
-    url: 'https://helpping-hand.herokuapp.com/',
+    url: 'https://github.com/MathieuParadis/helping-hand',
     stack: 'JavaScript, React, Sass, Ruby on Rails, PostgreSQL',
     description: 'Helping Hand is an aid platform that connects people in need to willing volunteers in your community.',
     isWebsiteURL: false
