@@ -47,7 +47,7 @@ const LogosContainer = () => {
             >
               <img src={logo.url} alt={logo.title} id={logo.alt} />
               <div className='container-overlay d-flex justify-content-center align-items-center invisible' id={logo.alt}>
-                <button onClick={() => displayImg(logo)}>test</button>
+                <button onClick={() => displayImg(logo)}>View</button>
               </div>
             </div>
           )
