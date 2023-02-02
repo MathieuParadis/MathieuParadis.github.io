@@ -60,7 +60,7 @@ const projects = [
   {
     title: 'FollowNut', 
     img: follownut_screenshot,
-    url: 'https://follownut.herokuapp.com/',
+    url: 'https://github.com/MathieuParadis/follownut_front',
     stack: 'JavaScript, React, Sass, Ruby on Rails, PostgreSQL',
     description: 'FollowNut is a follow up application for nutritionists and their patients.',
     isWebsiteURL: false
