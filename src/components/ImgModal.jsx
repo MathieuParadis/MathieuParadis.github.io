@@ -22,7 +22,7 @@ const ImgModal = ({ display, setDisplay, img }) => {
     <div className={`img-modal ${display ? 'visible' : 'invisible'}`}>
       <div className='overlay' onClick={closeModal}>
         <div className='content'>
-          <img src={img.url} alt={img.title} />
+          <img src={img?.url} alt={img?.title} />
         </div>
       </div>
     </div>

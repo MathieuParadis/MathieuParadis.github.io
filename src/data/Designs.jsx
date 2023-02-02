@@ -20,26 +20,26 @@ import owl from '../assets/images/designs/illustrations/owl.png'
 import snail from '../assets/images/designs/illustrations/snail.png'
 
 const logos = [
-  { title: 'Aqueo', url: aqueo },
-  { title: 'Feedtruck', url: feedtruck },
-  { title: 'Burger Queen', url: burger_queen },
-  { title: 'Pappa Johnny', url: pappa_johnny },
-  { title: 'Salad bar', url: salad_bar },
-  { title: 'Taco Truck', url: taco_truck },
-  { title: 'Vegan place', url: vegan_place },
-  { title: 'We sushi', url: we_sushi }
+  { title: 'Aqueo', alt: 'aqueo' , url: aqueo },
+  { title: 'Feedtruck', alt: 'feedtruck', url: feedtruck },
+  { title: 'Burger Queen', alt: 'burger_queen', url: burger_queen },
+  { title: 'Pappa Johnny', alt: 'pappa_johnny', url: pappa_johnny },
+  { title: 'Salad bar', alt: 'salad_bar', url: salad_bar },
+  { title: 'Taco Truck', alt: 'taco_truck', url: taco_truck },
+  { title: 'Vegan place', alt: 'vegan_place', url: vegan_place },
+  { title: 'We sushi', alt: 'we_sushi', url: we_sushi }
 ]
 
 const posters = [
-  { title: 'Flower Market', url: flower_market }
+  { title: 'Flower Market', alt: 'flower_market', url: flower_market }
 ]
 
 const illustrations = [
-  { title: 'Cat', url: cat },
-  { title: 'Choco', url: choco_tart },
-  { title: 'Blueberry donut', url: donut },
-  { title: 'Geometric owl', url: owl },
-  { title: 'Thirsty snail', url: snail }
+  { title: 'Cat', alt: 'cat', url: cat },
+  { title: 'Choco', alt: 'choco_tart', url: choco_tart },
+  { title: 'Blueberry donut', alt: 'donut', url: donut },
+  { title: 'Geometric owl', alt: 'owl', url: owl },
+  { title: 'Thirsty snail', alt: 'snail', url: snail }
 ]
 
 export { logos, posters, illustrations}
