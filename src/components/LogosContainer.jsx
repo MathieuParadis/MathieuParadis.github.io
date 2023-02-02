@@ -36,11 +36,11 @@ const LogosContainer = () => {
     <>
       <ImgModal display={display} setDisplay={setDisplay} img={img}  />
 
-      <div className='logos-container d-flex flex-wrap justify-content-between align-items-center mb-3'>
+      <div className='imgs-container d-flex flex-wrap justify-content-between align-items-center mb-3'>
         {logos.map((logo) => {
           return (
             <div 
-              className="logo-container col-12 col-sm-6 col-md-4 col-lg-3" 
+              className="img-container col-12 col-sm-6 col-md-4 col-lg-3" 
               key={logo.alt}
               onMouseOver={() => {showOverlayContainer(logo)}}
               onMouseOut={() => {hideOverlayContainer(logo)}}
