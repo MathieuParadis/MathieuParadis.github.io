@@ -60,7 +60,7 @@ const projects = [
   {
     title: 'FollowNut', 
     img: follownut_screenshot,
-    url: 'https://github.com/MathieuParadis/follownut_front',
+    url: 'https://github.com/MathieuParadis/FollowNut',
     stack: 'JavaScript, React, Sass, Ruby on Rails, PostgreSQL',
     description: 'FollowNut is a follow up application for nutritionists and their patients.',
     isWebsiteURL: false
