@@ -27,7 +27,6 @@ const LogosContainer = () => {
     divBtn.classList.add('invisible')
   }
 
-
   const displayImg = (img) => {
     setDisplay(true)
     setImg(img)
@@ -46,11 +45,7 @@ const LogosContainer = () => {
               onMouseOver={() => {showOverlayContainer(logo)}}
               onMouseOut={() => {hideOverlayContainer(logo)}}
             >
-              <img
-                src={logo.url} 
-                alt={logo.title}
-                id={logo.alt}
-              />
+              <img src={logo.url} alt={logo.title} id={logo.alt} />
               <div className='container-overlay d-flex justify-content-center align-items-center invisible' id={logo.alt}>
                 <button onClick={() => displayImg(logo)}>test</button>
               </div>
