@@ -1,13 +1,17 @@
-// REACT IMPORTS
+// REACT IMPORT
 import React from 'react'
 
+// REACT-BOOTSTRAP IMPORTS
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 
-const Home = () => {
+// COMPONENTS IMPORTS
+import LogosContainer from '../components/LogosContainer'
+
+const Designs = () => {
 
   return (
-    <div className='design'>
+    <div className='designs'>
       <div className='h-100'>
 
       <Tabs
@@ -18,7 +22,7 @@ const Home = () => {
         // variant='pills'
       >
         <Tab eventKey="logos" title="Logos">
-          Logos here
+          <LogosContainer />
         </Tab>
         <Tab eventKey="events" title="Event posters">
           posters here
@@ -34,4 +38,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Designs

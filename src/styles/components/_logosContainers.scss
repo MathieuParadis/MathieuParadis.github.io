@@ -1,0 +1,18 @@
+.logos-container {
+  border: 2px solid var(--sec-color);
+
+  .logo-container {
+    cursor: pointer;
+    position: relative;
+    height: 300px;
+    border: 2px solid var(--sec-color);
+    overflow: hidden;
+  
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }  
+}
+

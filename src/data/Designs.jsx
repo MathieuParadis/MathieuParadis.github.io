@@ -13,11 +13,11 @@ import we_sushi from '../assets/images/designs/logos/we_sushi.png'
 import flower_market from '../assets/images/designs/posters/flower_market.png'
 
 // ILLUSTRATIONS
-import cat from '../assets/images/designs/posters/cat.png'
-import choco_tart from '../assets/images/designs/posters/choco_tart.png'
-import donut from '../assets/images/designs/posters/donut.png'
-import owl from '../assets/images/designs/posters/owl.png'
-import snail from '../assets/images/designs/posters/snail.png'
+import cat from '../assets/images/designs/illustrations/cat.png'
+import choco_tart from '../assets/images/designs/illustrations/choco_tart.png'
+import donut from '../assets/images/designs/illustrations/donut.png'
+import owl from '../assets/images/designs/illustrations/owl.png'
+import snail from '../assets/images/designs/illustrations/snail.png'
 
 const logos = [
   { title: 'Aqueo', img: aqueo },
@@ -39,8 +39,7 @@ const illustrations = [
   { title: 'Choco', img: choco_tart },
   { title: 'Blueberry donut', img: donut },
   { title: 'Geometric owl', img: owl },
-  { title: 'Thirsty snail', img: snail },
-
+  { title: 'Thirsty snail', img: snail }
 ]
 
 export { logos, posters, illustrations}
