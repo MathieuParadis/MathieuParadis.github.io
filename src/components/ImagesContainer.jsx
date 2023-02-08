@@ -7,8 +7,8 @@ import ImgModal from './ImgModal'
 const ImagesContainer = ({ images }) => {
   const [display, setDisplay] = useState(false)
   const [img, setImg] = useState(null)
-  const [enableBtn, setEnableBtn] = useState(false)
-  const [disabledBtn, setDisabledBtn] = useState(true)
+  const [hoveredImg, setHoveredImg] = useState(null)
+  const [enableBtn, setEnableBtn] = useState(null)
 
   const showOverlayContainer = (image) => {
     const img = document.querySelector(`img#${image.alt}`)
@@ -16,7 +16,7 @@ const ImagesContainer = ({ images }) => {
 
     img.classList.add('blurr')
     divBtn.classList.remove('invisible')
-    setEnableBtn(true)
+    setHoveredImg(image)
   }
 
   const hideOverlayContainer = (image) => {
@@ -25,19 +25,18 @@ const ImagesContainer = ({ images }) => {
 
     img.classList.remove('blurr')
     divBtn.classList.add('invisible')
-    setEnableBtn(false)
+    setHoveredImg(null)
   }
+
+  useEffect(() => {
+    setEnableBtn(hoveredImg)
+  }, [hoveredImg])
 
   useEffect(() => {
     if (img != null) {
       setDisplay(true)
     }
   }, [img])
-
-
-  useEffect(() => {
-    setDisabledBtn(!enableBtn)
-  }, [enableBtn])
 
   return (
     <>
@@ -54,7 +53,7 @@ const ImagesContainer = ({ images }) => {
               <div className="img-subcontainer h-100 w-100" >
                 <img src={image.url} alt={image.title} id={image.alt} />
                 <div className='container-overlay d-flex justify-content-center align-items-center invisible' id={image.alt}>
-                  <button onClick={() => setImg(image)} disabled={disabledBtn}>View</button>
+                  <button onClick={() => setImg(image)} disabled={enableBtn !== image}>View</button>
                 </div>
               </div>
             </div>
