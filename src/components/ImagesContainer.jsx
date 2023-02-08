@@ -25,8 +25,8 @@ const ImagesContainer = ({ images }) => {
   }
 
   const displayImg = (img) => {
-    setDisplay(true)
     setImg(img)
+    setDisplay(true)
   }
 
   return (
