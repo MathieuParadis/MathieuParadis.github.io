@@ -16,7 +16,6 @@ const Designs = () => {
   return (
     <div className='designs'>
       <div className='h-100'>
-
         <Tabs
           defaultActiveKey='logos'
           id='justify-tab-example'
