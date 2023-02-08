@@ -7,7 +7,7 @@ import ImgModal from './ImgModal'
 const ImagesContainer = ({ images }) => {
   const [display, setDisplay] = useState(false)
   const [img, setImg] = useState(null)
-  const [test, setTest] = useState(false)
+  const [enableBtn, setEnableBtn] = useState(false)
   const [disabledBtn, setDisabledBtn] = useState(true)
 
   const showOverlayContainer = (image) => {
@@ -16,7 +16,7 @@ const ImagesContainer = ({ images }) => {
 
     img.classList.add('blurr')
     divBtn.classList.remove('invisible')
-    setTest(true)
+    setEnableBtn(true)
   }
 
   const hideOverlayContainer = (image) => {
@@ -25,7 +25,7 @@ const ImagesContainer = ({ images }) => {
 
     img.classList.remove('blurr')
     divBtn.classList.add('invisible')
-    setTest(false)
+    setEnableBtn(false)
   }
 
   useEffect(() => {
@@ -36,8 +36,8 @@ const ImagesContainer = ({ images }) => {
 
 
   useEffect(() => {
-    setDisabledBtn(!test)
-  }, [test])
+    setDisabledBtn(!enableBtn)
+  }, [enableBtn])
 
   return (
     <>
