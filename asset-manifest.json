@@ -1,15 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.9007fc48.css",
-    "main.js": "/static/js/main.9f16da03.js",
+    "main.css": "/static/css/main.d88abbfe.css",
+    "main.js": "/static/js/main.b9ba669f.js",
     "static/media/move_and_groove.png": "/static/media/move_and_groove.e035e3a7bc84a6b20851.png",
     "static/media/movie_festival.png": "/static/media/movie_festival.e35d833360d45712f608.png",
     "static/media/helping_hand.png": "/static/media/helping_hand.33e39541914e516de177.png",
     "static/media/boulder_bike_tour.png": "/static/media/boulder_bike_tour.3d9fdf74b1e521b85efc.png",
-    "static/media/feedtruck.png": "/static/media/feedtruck.45f7589263deac0255ab.png",
+    "static/media/feedtruck.png": "/static/media/feedtruck.7334835d9408606e2964.png",
     "static/media/chalet_and_caviar.png": "/static/media/chalet_and_caviar.54c74a275719404be096.png",
     "static/media/neo-hunt.png": "/static/media/neo-hunt.7b09e4efa4ca8c6d4fe5.png",
+    "static/media/flower_market.png": "/static/media/flower_market.fd8fd2f49036d0c73227.png",
+    "static/media/donut.png": "/static/media/donut.8f1dab102c7dd573cdac.png",
+    "static/media/owl.png": "/static/media/owl.21ae22ececcf526abedf.png",
     "static/media/follownut.png": "/static/media/follownut.41252dd6452c9fb5c115.png",
+    "static/media/cat.png": "/static/media/cat.e584dddfebb46fa0cd96.png",
+    "static/media/salad_bar.png": "/static/media/salad_bar.4b101e697155a349acee.png",
+    "static/media/vegan_place.png": "/static/media/vegan_place.4e8dfb22c9d44c93e40a.png",
+    "static/media/choco_tart.png": "/static/media/choco_tart.cf2fd46085937dc81e03.png",
+    "static/media/burger_queen.png": "/static/media/burger_queen.abc8b1b4414d8d271062.png",
+    "static/media/pappa_johnny.png": "/static/media/pappa_johnny.11db1462d0820be662dc.png",
+    "static/media/snail.png": "/static/media/snail.10096ed446af16923db5.png",
+    "static/media/taco_truck.png": "/static/media/taco_truck.8d51ee488629d9170d65.png",
+    "static/media/we_sushi.png": "/static/media/we_sushi.d0f7e118e9d0d37fe24a.png",
     "static/media/koala.svg": "/static/media/koala.7eaf850b5acb69162521119b4b1720c6.svg",
     "static/media/react_dark.svg": "/static/media/react_dark.aae823c4ac2766fa87b65ae94b8fc8bc.svg",
     "static/media/react.svg": "/static/media/react.a2d23963a90327f06df25abc4cb840de.svg",
@@ -25,6 +37,7 @@
     "static/media/ai.svg": "/static/media/ai.2930ea5a50b51b75a1407f6d5971881f.svg",
     "static/media/mail_dark.svg": "/static/media/mail_dark.776e2fc2e6f02c3735c0ea7dfbde1695.svg",
     "static/media/mail.svg": "/static/media/mail.0606ead90e7d5a324bb74b1b6fe4bf16.svg",
+    "static/media/aqueo.svg": "/static/media/aqueo.0989d1f498d5687346f348266a8b3e68.svg",
     "static/media/ps_dark.svg": "/static/media/ps_dark.1ebbcbce5b11827feeefa4e02af0ff07.svg",
     "static/media/ps.svg": "/static/media/ps.fa904508dfd9858da93ca86ecc4b5461.svg",
     "static/media/figma_dark.svg": "/static/media/figma_dark.d74ca490ec1767c7e78f9ff502160e8e.svg",
@@ -50,11 +63,11 @@
     "index.html": "/index.html",
     "static/media/circle_outline.svg": "/static/media/circle_outline.880879cc4ef200e79f3abceed1d232ed.svg",
     "static/media/circle.svg": "/static/media/circle.525dbfe62cde85ac0da7ffc4d1a69e2a.svg",
-    "main.9007fc48.css.map": "/static/css/main.9007fc48.css.map",
-    "main.9f16da03.js.map": "/static/js/main.9f16da03.js.map"
+    "main.d88abbfe.css.map": "/static/css/main.d88abbfe.css.map",
+    "main.b9ba669f.js.map": "/static/js/main.b9ba669f.js.map"
   },
   "entrypoints": [
-    "static/css/main.9007fc48.css",
-    "static/js/main.9f16da03.js"
+    "static/css/main.d88abbfe.css",
+    "static/js/main.b9ba669f.js"
   ]
 }
