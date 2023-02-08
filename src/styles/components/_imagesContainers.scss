@@ -1,6 +1,6 @@
 .imgs-container {
   position: relative;
-  padding: 0.5rem;
+  padding: 6px;
   border: 2px solid var(--sec-color);
 
   .img-container {
@@ -8,6 +8,7 @@
     position: relative;
     height: 300px;
     overflow: hidden;
+    padding: 3px;
 
     .img-subcontainer {
       border: 2px solid var(--sec-color);

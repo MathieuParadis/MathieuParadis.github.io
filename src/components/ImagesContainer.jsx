@@ -36,7 +36,7 @@ const ImagesContainer = ({ images }) => {
         {images.map((image) => {
           return (
             <div 
-              className="img-container col-12 col-sm-6 col-md-4 col-lg-3 p-1" 
+              className="img-container col-12 col-sm-6 col-md-4 col-lg-3" 
               key={image.alt}
               onMouseOver={() => {showOverlayContainer(image)}}
               onMouseOut={() => {hideOverlayContainer(image)}}
