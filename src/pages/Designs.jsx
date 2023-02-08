@@ -6,9 +6,10 @@ import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 
 // COMPONENTS IMPORTS
-import IllustrationsContainer from '../components/IllustrationsContainer'
-import LogosContainer from '../components/LogosContainer'
-import PostersContainer from '../components/PostersContainer'
+import ImagesContainer from '../components/ImagesContainer'
+
+// DATA IMPORTS
+import { illustrations, logos, posters } from '../data/Designs'
 
 const Designs = () => {
 
@@ -16,23 +17,23 @@ const Designs = () => {
     <div className='designs'>
       <div className='h-100'>
 
-      <Tabs
-        defaultActiveKey="logos"
-        id="justify-tab-example"
-        className="mb-3"
-        justify
-        // variant='pills'
-      >
-        <Tab eventKey="logos" title="Logos">
-          <LogosContainer />
-        </Tab>
-        <Tab eventKey="events" title="Event posters">
-          <PostersContainer />
-        </Tab>
-        <Tab eventKey="illustrations" title="Illustrations">
-          <IllustrationsContainer />
-        </Tab>
-      </Tabs> 
+        <Tabs
+          defaultActiveKey='logos'
+          id='justify-tab-example'
+          className='mb-3'
+          justify
+          // variant='pills'
+        >
+          <Tab eventKey='logos' title='Logos'>
+            <ImagesContainer images={logos} />
+          </Tab>
+          <Tab eventKey='events' title='Event posters'>
+            <ImagesContainer images={posters} />
+          </Tab>
+          <Tab eventKey='illustrations' title='Illustrations'>
+            <ImagesContainer images={illustrations} />
+          </Tab>
+        </Tabs> 
       </div>
 
 

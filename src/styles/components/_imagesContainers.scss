@@ -1,41 +1,45 @@
 .imgs-container {
   position: relative;
+  padding: 0.5rem;
   border: 2px solid var(--sec-color);
 
   .img-container {
     cursor: pointer;
     position: relative;
     height: 300px;
-    border: 2px solid var(--sec-color);
     overflow: hidden;
-  
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-    }
 
-    .container-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
+    .img-subcontainer {
+      border: 2px solid var(--sec-color);
 
-      button {
-        width: 100px;   
-        border: none;
-        border-radius: 40px;
-        padding: 10px;
-        background-color: var(--prim-color);
-        color: white;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
 
-        &:hover {
-          scale: 1.05;
-        }
+      .container-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
 
-        &:focus {
-          outline: none;
+        button {
+          width: 100px;   
+          border: none;
+          border-radius: 40px;
+          padding: 10px;
+          background-color: var(--prim-color);
+          color: white;
+
+          &:hover {
+            scale: 1.05;
+          }
+
+          &:focus {
+            outline: none;
+          }
         }
       }
     }
