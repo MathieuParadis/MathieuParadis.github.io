@@ -172,3 +172,8 @@ a {
     color: var(--sec-color);
   }
 }
+
+.blurr {
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+}

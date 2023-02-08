@@ -1,0 +1,18 @@
+.designs {
+  margin: 0px -45px;
+  padding: 27px 50px;
+
+  @include mobile_and_tablet {
+    padding: 30px 20px;   
+  }
+
+  // Tabs
+  button.nav-link {
+    color: var(--sec-color);
+  }
+
+  button.nav-link.active {
+    color: var(--darker-prim-color);
+    background-color: var(--basic-color-white);
+  }
+}

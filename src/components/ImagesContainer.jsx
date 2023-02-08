@@ -1,0 +1,58 @@
+// REACT IMPORTS
+import React, { useState } from 'react'
+
+// COMPONENTS IMPORTS
+import ImgModal from './ImgModal'
+
+const ImagesContainer = ({ images }) => {
+  const [display, setDisplay] = useState(false)
+  const [img, setImg] = useState(null)
+
+  const showOverlayContainer = (image) => {
+    const img = document.querySelector(`img#${image.alt}`)
+    const divBtn = document.querySelector(`div#${image.alt}`)
+
+    img.classList.add('blurr')
+    divBtn.classList.remove('invisible')
+  }
+
+  const hideOverlayContainer = (image) => {
+    const img = document.querySelector(`img#${image.alt}`)
+    const divBtn = document.querySelector(`div#${image.alt}`)
+
+    img.classList.remove('blurr')
+    divBtn.classList.add('invisible')
+  }
+
+  const displayImg = (img) => {
+    setDisplay(true)
+    setImg(img)
+  }
+
+  return (
+    <>
+      <ImgModal display={display} setDisplay={setDisplay} img={img}  />
+      <div className='imgs-container d-flex flex-wrap justify-content-between align-items-center'>
+        {images.map((image) => {
+          return (
+            <div 
+              className="img-container col-12 col-sm-6 col-md-4 col-lg-3" 
+              key={image.alt}
+              onMouseOver={() => {showOverlayContainer(image)}}
+              onMouseOut={() => {hideOverlayContainer(image)}}
+            >
+              <div className="img-subcontainer h-100 w-100" >
+                <img src={image.url} alt={image.title} id={image.alt} />
+                <div className='container-overlay d-flex justify-content-center align-items-center invisible' id={image.alt}>
+                  <button onClick={() => displayImg(image)}>View</button>
+                </div>
+              </div>
+            </div>
+          )
+        })}
+      </div>
+    </>
+  )
+}
+
+export default ImagesContainer

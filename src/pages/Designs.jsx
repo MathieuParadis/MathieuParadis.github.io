@@ -1,32 +1,38 @@
-// REACT IMPORTS
+// REACT IMPORT
 import React from 'react'
 
+// REACT-BOOTSTRAP IMPORTS
 import Tab from 'react-bootstrap/Tab'
 import Tabs from 'react-bootstrap/Tabs'
 
-const Home = () => {
+// COMPONENTS IMPORTS
+import ImagesContainer from '../components/ImagesContainer'
+
+// DATA IMPORTS
+import { illustrations, logos, posters } from '../data/Designs'
+
+const Designs = () => {
 
   return (
-    <div className='design'>
+    <div className='designs'>
       <div className='h-100'>
-
-      <Tabs
-        defaultActiveKey="logos"
-        id="justify-tab-example"
-        className="mb-3"
-        justify
-        // variant='pills'
-      >
-        <Tab eventKey="logos" title="Logos">
-          Logos here
-        </Tab>
-        <Tab eventKey="events" title="Event posters">
-          posters here
-        </Tab>
-        <Tab eventKey="illustrations" title="Illustrations">
-          illustrations here
-        </Tab>
-      </Tabs> 
+        <Tabs
+          defaultActiveKey='logos'
+          id='justify-tab-example'
+          className='mb-3'
+          justify
+          // variant='pills'
+        >
+          <Tab eventKey='logos' title='Logos'>
+            <ImagesContainer images={logos} />
+          </Tab>
+          <Tab eventKey='events' title='Event posters'>
+            <ImagesContainer images={posters} />
+          </Tab>
+          <Tab eventKey='illustrations' title='Illustrations'>
+            <ImagesContainer images={illustrations} />
+          </Tab>
+        </Tabs> 
       </div>
 
 
@@ -34,4 +40,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Designs

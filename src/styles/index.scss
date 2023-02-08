@@ -9,16 +9,18 @@
 @import './components/darkModeBtnMobile';
 @import './components/experienceComponent';
 @import './components/hamburgerMenu';
+@import './components/imagesContainers';
+@import './components/imgModal';
 @import './components/languagesAndTools';
 @import './components/navigation';
-@import './components/_projectCard';
+@import './components/projectCard';
 @import './components/projectModal';
-@import './components/_spokenLanguagesSection';
-@import './components/_workExperienceAndEducationSection';
+@import './components/spokenLanguagesSection';
+@import './components/workExperienceAndEducationSection';
 
 // PAGES STYLES IMPORTS
 @import './pages/contact';
-@import './pages/design';
+@import './pages/designs';
 @import './pages/home';
 @import './pages/portfolio';
 @import './pages/resume';
