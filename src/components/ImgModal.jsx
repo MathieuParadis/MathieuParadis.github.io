@@ -1,8 +1,9 @@
 // REACT IMPORTS
 import React, { useEffect } from 'react'
 
-const ImgModal = ({ display, setDisplay, img }) => {
+const ImgModal = ({ display, setDisplay, img, setImg }) => {
   const closeModal = () => {
+    setImg(null)
     setDisplay(false)
   }
 
