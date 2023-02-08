@@ -54,7 +54,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    display: flex;
+    display: none;
     visibility: hidden;
     background-color: var(--basic-color-dark);
     opacity: 0;
@@ -67,6 +67,7 @@
     &.clicked {
       visibility: visible;
       opacity: 0.9;
+      display: flex;
     }
 
     .menu-link{
