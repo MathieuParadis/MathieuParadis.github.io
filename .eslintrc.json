@@ -5,7 +5,8 @@
       "eslint:recommended",
       "plugin:@typescript-eslint/recommended",
       "plugin:react/recommended",
-      "plugin:react-hooks/recommended"
+      "plugin:react-hooks/recommended",
+      "eslint-config-prettier"
     ],
     "env": {
       "browser": true,
@@ -13,7 +14,7 @@
       "es6": true
     },
     "rules": {
-      "quotes": ["error", "single"] // you can remove if you want
+      "quotes": ["error", "single"]
       // Add your custom rules here
     },
     "settings": {
@@ -21,4 +22,4 @@
         "version": "detect"
       }
     }
-}
+  }
