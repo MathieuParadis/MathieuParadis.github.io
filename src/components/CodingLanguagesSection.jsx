@@ -1,5 +1,5 @@
 // REACT IMPORTS
-import React, {  useContext } from 'react'
+import React, {  useContext } from 'react';
 
 // COMPONENTS IMPORTS
 import DarkMode from './context/DarkMode'
