@@ -23,7 +23,7 @@ const Navigation = () => {
   }
 
   return (
-    <div className='navigation'>
+    <div className='navigation bg-red-500'>
       <div>
         <img className='logo' src={logo} alt='MP logo' onClick={refreshPage} />
       </div>

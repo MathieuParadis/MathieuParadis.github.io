@@ -1,5 +1,12 @@
-// BOOTSTRAP STYLES & SETTINGS IMPORTS
+// BOOTSTRAP IMPORT
 @import "~bootstrap/scss/bootstrap";
+
+// TAILWIND IMPORTS
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+// SETTINGS IMPORT
 @import './settings';
 
 // COMPONENTS STYLES IMPORTS
