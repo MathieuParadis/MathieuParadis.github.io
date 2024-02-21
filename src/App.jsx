@@ -12,12 +12,12 @@ import Projects from './pages/Projects'
 import Resume from './pages/Resume'
 
 // COMPONENTS IMPORTS
-import Navigation from './components/Navigation'
+import Navbar from './components/navigation/Navbar'
 
 const App = () => {
   return (
     <div className='app'>
-      <Navigation />
+      <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/projects' exact='true' element={<Projects />} />
