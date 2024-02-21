@@ -28,7 +28,7 @@ const Navigation = () => {
         <img className='logo' src={logo} alt='MP logo' onClick={refreshPage} />
       </div>
       <div className='d-flex flex-row justify-content-between'>
-        <div className='nav-links pe-4'>
+        <div className='nav-links'>
           <NavLink exact='true' to='/'>Home</NavLink>
           <NavLink exact='true' to='/projects'>Projects</NavLink>
           <NavLink exact='true' to='/designs'>Designs</NavLink>
