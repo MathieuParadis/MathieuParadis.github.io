@@ -38,22 +38,6 @@ $footer-color:#ebebeb;
 $shadow-color1: rgba(0, 0, 0, 0.12);
 $shadow-color2: rgba(0, 0, 0, 0.24);
 
-// ----- NIGHT MODE (DARK) ----- //
-$color-1-dark: #42afaa;
-$color-1-lighter-dark: #87ccc9;
-$color-1-darker-dark: #348c88;
-$color-2-dark: #ffffff;
-$transparent-color-2-dark: rgba(255, 255, 255, 0.6);
-$color-3-dark: #ef767a;
-$color-3-lighter-dark: #f7babc;
-$color-3-darker-dark: #bf5e61;
-$success-dark: #7db58d;
-$danger-dark: #fc5c5c;
-$warning-dark: #f1f173;
-$footer-color-dark:#7e7e7e;
-$shadow-color1-dark: rgba(255, 255, 255, 0.88);
-$shadow-color2-dark: rgba(255, 255, 255, 0.76);
-
 
 // $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 :root {
@@ -79,31 +63,6 @@ $shadow-color2-dark: rgba(255, 255, 255, 0.76);
   --footer-color:#{$footer-color};
   --shadow-color1:#{$shadow-color1};
   --shadow-color2:#{$shadow-color2};
-}
-
-.dark-mode {
-  --basic-color-white:#{$basic-color-dark};
-  --basic-color-grey-light:#{$basic-color-grey-dark};
-  --basic-color-grey-dark:#{$basic-color-grey-light};
-  --basic-color-dark:#{$basic-color-white};
-
-  --prim-color:#{$color-1-dark};
-  --lighter-prim-color:#{$color-1-darker-dark};
-  --darker-prim-color:#{$color-1-lighter-dark};
-  --sec-color:#{$color-2-dark};
-  --transparency-sec-color: #{$transparent-color-2-dark};
-  --third-color:#{$color-3-dark};
-  --lighter-third-color:#{$color-3-lighter-dark};
-  --darker-third-color:#{$color-3-darker-dark};  
-  --success-color:#{$success};
-  --success-bg-color:#{$success-bg};
-  --danger-color:#{$danger};
-  --danger-bg-color:#{$danger-bg};
-  --warning-color:#{$warning};
-  --warning-bg-color:#{$warning-bg};
-  --footer-color:#{$footer-color-dark};
-  --shadow-color1:#{$shadow-color1-dark};
-  --shadow-color2:#{$shadow-color2-dark};
 }
 
 

@@ -4,9 +4,6 @@ import React from 'react'
 // REACT-ROUTER-DOM IMPORTS
 import { NavLink } from 'react-router-dom'
 
-// COMPONENTS IMPORTS
-import DarkModeBtnMobile from './DarkModeBtnMobile'
-
 const HamburgerMenu = () => {
   const handleMenu = () => {
     document.querySelector('.span1').classList.toggle('clicked')
@@ -29,7 +26,6 @@ const HamburgerMenu = () => {
         <NavLink className='menu-link' exact='true' to='/designs' onClick={handleMenu}>Designs</NavLink>
         <NavLink className='menu-link' exact='true' to='/resume' onClick={handleMenu}>Resume</NavLink>
         <NavLink className='menu-link' exact='true' to='/contact' onClick={handleMenu}>Contact</NavLink>
-        <DarkModeBtnMobile />      
       </div>
     </div>
   )
