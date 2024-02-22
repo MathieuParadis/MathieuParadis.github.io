@@ -5,10 +5,10 @@ import React from 'react'
 import { NavLink, useLocation, useNavigate } from 'react-router-dom'
 
 // COMPONENTS IMPORTS
-import HamburgerMenu from './HamburgerMenu'
+import MobileNavigation from './MobileNavigation'
 
 // ASSETS IMPORTS
-import logo from '../assets/logos/logo.svg'
+import logo from '../../assets/logos/logo.svg'
 
 const Navigation = () => {
   const location = useLocation()
@@ -29,12 +29,12 @@ const Navigation = () => {
       </div>
       <div className='d-flex flex-row justify-content-between'>
         <div className='nav-links'>
-          <NavLink exact='true' to='/'>Home</NavLink>
-          <NavLink exact='true' to='/projects'>Projects</NavLink>
-          <NavLink exact='true' to='/designs'>Designs</NavLink>
-          <NavLink exact='true' to='/resume'>Resume</NavLink>
+          <NavLink to='/'>Home</NavLink>
+          <NavLink to='/projects'>Projects</NavLink>
+          <NavLink to='/designs'>Designs</NavLink>
+          <NavLink to='/resume'>Resume</NavLink>
         </div>
-        <HamburgerMenu />
+        <MobileNavigation />
       </div>
     </div>
   )
