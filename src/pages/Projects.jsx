@@ -14,7 +14,6 @@ const Projects = () => {
   const openModal = (project) => {
     setCurrentProject(project)
     const modal = document.querySelector('.project-modal')
-    console.log(modal)
     modal.style.visibility = 'visible'
     document.body.style.overflow = 'hidden'
   }

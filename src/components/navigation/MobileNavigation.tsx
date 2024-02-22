@@ -25,6 +25,7 @@ const MobileNavigation = () => {
         <NavLink className='menu-link' to='/projects' onClick={handleMenu}>Projects</NavLink>
         <NavLink className='menu-link' to='/designs' onClick={handleMenu}>Designs</NavLink>
         <NavLink className='menu-link' to='/resume' onClick={handleMenu}>Resume</NavLink>
+        <NavLink className='menu-link' to='/contact' onClick={handleMenu}>Contact</NavLink>
       </div>
     </div>
   )
