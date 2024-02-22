@@ -35,7 +35,6 @@ const Designs = () => {
         </Tabs> 
       </div>
 
-
     </div>
   )
 }

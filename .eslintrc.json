@@ -14,7 +14,11 @@
       "es6": true
     },
     "rules": {
-      "quotes": ["error", "single"]
+      "quotes": ["error", "single"],
+      "semi": ["error", "never"],
+      "no-multiple-empty-lines": ["error", { "max": 1 }],
+      "eol-last": ["error", "always"]
+
       // Add your custom rules here
     },
     "settings": {
