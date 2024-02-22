@@ -33,7 +33,6 @@ const Navigation = () => {
           <NavLink exact='true' to='/projects'>Projects</NavLink>
           <NavLink exact='true' to='/designs'>Designs</NavLink>
           <NavLink exact='true' to='/resume'>Resume</NavLink>
-          <NavLink exact='true' to='/contact'>Contact</NavLink>
         </div>
         <HamburgerMenu />
       </div>

@@ -25,7 +25,6 @@ const HamburgerMenu = () => {
         <NavLink className='menu-link' exact='true' to='/projects' onClick={handleMenu}>Projects</NavLink>
         <NavLink className='menu-link' exact='true' to='/designs' onClick={handleMenu}>Designs</NavLink>
         <NavLink className='menu-link' exact='true' to='/resume' onClick={handleMenu}>Resume</NavLink>
-        <NavLink className='menu-link' exact='true' to='/contact' onClick={handleMenu}>Contact</NavLink>
       </div>
     </div>
   )
