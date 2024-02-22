@@ -1,5 +1,5 @@
 // REACT IMPORT
-import React from 'react';
+import React from 'react'
 
 // ASSETS IMPORTS
 import html from '../assets/logos/html.svg'
