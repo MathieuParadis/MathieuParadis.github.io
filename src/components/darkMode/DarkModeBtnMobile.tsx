@@ -5,8 +5,8 @@ import React, {  useContext } from 'react'
 import DarkMode from '../context/DarkMode'
 
 // ASSETS IMPORTS
-import sun from '../assets/images/sun_reverse.svg'
-import moon from '../assets/images/moon_reverse.svg'
+import sun from '../../assets/images/sun_reverse.svg'
+import moon from '../../assets/images/moon_reverse.svg'
 
 const DarkModeBtnMobile = () => {
   const { darkMode, setDarkMode } = useContext(DarkMode)
