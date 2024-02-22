@@ -6,7 +6,6 @@ import { Routes, Route } from 'react-router-dom'
 
 // PAGES IMPORTS
 import Home from './pages/Home'
-import Contact from './pages/Contact'
 import Designs from './pages/Designs'
 import Projects from './pages/Projects'
 import Resume from './pages/Resume'
@@ -23,7 +22,6 @@ const App = () => {
         <Route path='/projects' exact='true' element={<Projects />} />
         <Route path='/designs' exact='true' element={<Designs />} />
         <Route path='/resume' exact='true' element={<Resume />} />
-        <Route path='/contact' exact='true' element={<Contact />} />
       </Routes>
     </div>
   )
