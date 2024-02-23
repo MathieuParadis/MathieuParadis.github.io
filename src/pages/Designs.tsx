@@ -12,7 +12,6 @@ import ImagesContainer from '../components/ImagesContainer'
 import { illustrations, logos, posters } from '../data/Designs'
 
 const Designs = () => {
-
   return (
     <div className='designs'>
       <div className='h-100'>
@@ -21,7 +20,6 @@ const Designs = () => {
           id='justify-tab-example'
           className='mb-3'
           justify
-          // variant='pills'
         >
           <Tab eventKey='logos' title='Logos'>
             <ImagesContainer images={logos} />
