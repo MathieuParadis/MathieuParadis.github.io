@@ -42,7 +42,7 @@ const ProjectModal = (props: Props): JSX.Element => {
         {project &&
           <>
             <h1 className='m-0'>{project.title}</h1>
-            <img src={project.img} alt={project.title + ' illustration'} />
+            <img src={project.img} alt={project.title + ' illustration'} loading="lazy" />
             <p>{project.description}</p>
             <p><strong>Stack:</strong><br></br>{project.stack}</p>
             <a href={project.url} target='_blank' className='project-link' rel='noreferrer'>
