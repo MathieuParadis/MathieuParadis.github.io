@@ -2,25 +2,25 @@
 import React, {  useContext } from 'react'
 
 // COMTEXT IMPORTS
-import DarkMode from './context/DarkMode'
+import DarkMode from '../context/DarkMode'
 
 // ASSETS IMPORTS
-import html from '../assets/logos/html.svg'
-import html_dark from '../assets/logos/html_dark.svg'
-import css from '../assets/logos/css.svg'
-import css_dark from '../assets/logos/css_dark.svg'
-import js from '../assets/logos/js.svg'
-import js_dark from '../assets/logos/js_dark.svg'
-import next from '../assets/logos/next.svg'
-import next_dark from '../assets/logos/next_dark.svg'
-import react from '../assets/logos/react.svg'
-import react_dark from '../assets/logos/react_dark.svg'
-import ruby from '../assets/logos/ruby.svg'
-import ruby_dark from '../assets/logos/ruby_dark.svg'
-import rails from '../assets/logos/rails.svg'
-import rails_dark from '../assets/logos/rails_dark.svg'
-import ts from '../assets/logos/TS.svg'
-import ts_dark from '../assets/logos/TS_dark.svg'
+import html from '../../assets/logos/html.svg'
+import html_dark from '../../assets/logos/html_dark.svg'
+import css from '../../assets/logos/css.svg'
+import css_dark from '../../assets/logos/css_dark.svg'
+import js from '../../assets/logos/js.svg'
+import js_dark from '../../assets/logos/js_dark.svg'
+import next from '../../assets/logos/next.svg'
+import next_dark from '../../assets/logos/next_dark.svg'
+import react from '../../assets/logos/react.svg'
+import react_dark from '../../assets/logos/react_dark.svg'
+import ruby from '../../assets/logos/ruby.svg'
+import ruby_dark from '../../assets/logos/ruby_dark.svg'
+import rails from '../../assets/logos/rails.svg'
+import rails_dark from '../../assets/logos/rails_dark.svg'
+import ts from '../../assets/logos/TS.svg'
+import ts_dark from '../../assets/logos/TS_dark.svg'
 
 const CodingLanguageSection = () => {
   const { darkMode } = useContext(DarkMode)

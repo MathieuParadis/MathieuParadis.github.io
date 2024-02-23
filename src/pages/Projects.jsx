@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 
 // COMPONENTS IMPORTS
 import ProjectCard from '../components/ProjectCard'
-import ProjectModal from '../components/ProjectModal'
+import ProjectModal from '../components/modals/ProjectModal'
 
 // COMPONENTS DATA
 import projects from '../data/Projects'

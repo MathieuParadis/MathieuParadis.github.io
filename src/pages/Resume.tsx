@@ -2,12 +2,12 @@
 import React from 'react'
 
 // COMPONENTS IMPORTS
-import CodingLanguagesSection from '../components/CodingLanguagesSection'
-import ContactSection from '../components/ContactSection'
-import DesignToolsSection from '../components/DesignToolsSection'
-import EducationSection from '../components/EducationSection'
-import SpokenLanguagesSection from '../components/SpokenLanguagesSection'
-import WorkSection from '../components/WorkSection'
+import CodingLanguagesSection from '../components/resume/CodingLanguagesSection'
+import ContactSection from '../components/resume/ContactSection'
+import DesignToolsSection from '../components/resume/DesignToolsSection'
+import EducationSection from '../components/resume/EducationSection'
+import SpokenLanguagesSection from '../components/resume/SpokenLanguagesSection'
+import WorkSection from '../components/resume/WorkSection'
 
 const Resume = () => {
   return (

@@ -2,15 +2,15 @@
 import React, {  useContext } from 'react'
 
 // CONTEXT IMPORTS
-import DarkMode from './context/DarkMode'
+import DarkMode from '../context/DarkMode'
 
 // ASSETS IMPORTS
-import ai from '../assets/logos/ai.svg'
-import ai_dark from '../assets/logos/ai_dark.svg'
-import figma from '../assets/logos/figma.svg'
-import figma_dark from '../assets/logos/figma_dark.svg'
-import ps from '../assets/logos/ps.svg'
-import ps_dark from '../assets/logos/ps_dark.svg'
+import ai from '../../assets/logos/ai.svg'
+import ai_dark from '../../assets/logos/ai_dark.svg'
+import figma from '../../assets/logos/figma.svg'
+import figma_dark from '../../assets/logos/figma_dark.svg'
+import ps from '../../assets/logos/ps.svg'
+import ps_dark from '../../assets/logos/ps_dark.svg'
 
 const CodingLanguageSection = () => {
   const { darkMode } = useContext(DarkMode)
