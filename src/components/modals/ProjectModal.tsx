@@ -8,31 +8,31 @@ interface Props {
   project: ProjectType | null
 }
 
-const ProjectModal = (props: Props) => {
+const ProjectModal = (props: Props): JSX.Element => {
   const { project } = props
   const modal = document.querySelector('.project-modal') as HTMLElement
 
-  const closeModal = () => {
+  const closeModal = (): void => {
     modal.style.visibility = 'hidden'
     document.body.style.overflow = 'auto'
   }
 
-  window.onclick = (event) => {
+  window.onclick = (event): void => {
     event.target === document.querySelector('.project-modal-overlay') &&
     event.target !== document.querySelector('.project-modal-content') &&
     closeModal()
   }
 
-  useEffect(() => {
+  useEffect((): void => {
     // close modal on esc
-    const handleKeyPress = (e) => {
+    const handleKeyPress = (e): void => {
       if (e.keyCode === 27) {
         closeModal()
       }
     }
 
     document.addEventListener('keydown', handleKeyPress)
-    return () => document.removeEventListener('keydown', handleKeyPress)
+    document.removeEventListener('keydown', handleKeyPress)
   })
 
   return (
