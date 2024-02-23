@@ -2,13 +2,13 @@
 import React, {  useContext } from 'react'
 
 // CONTEXT IMPORTS
-import DarkMode from './context/DarkMode'
+import DarkMode from '../context/DarkMode'
 
 // ASSETS IMPORTS
-import mail from '../assets/logos/mail.svg'
-import mail_dark from '../assets/logos/mail_dark.svg'
-import linkedIn_logo from '../assets/logos/linkedin.svg'
-import linkedIn_logo_dark from '../assets/logos/linkedin_dark.svg'
+import mail from '../../assets/logos/mail.svg'
+import mail_dark from '../../assets/logos/mail_dark.svg'
+import linkedIn_logo from '../../assets/logos/linkedin.svg'
+import linkedIn_logo_dark from '../../assets/logos/linkedin_dark.svg'
 
 const ContactSection = () => {
   const { darkMode } = useContext(DarkMode)

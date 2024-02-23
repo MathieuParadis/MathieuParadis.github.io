@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react'
 
 // COMPONENTS IMPORTS
-import ImgModal from './ImgModal'
+import ImgModal from './modals/ImgModal'
 
 const ImagesContainer = ({ images }) => {
   const [display, setDisplay] = useState(false)
