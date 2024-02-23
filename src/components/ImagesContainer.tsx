@@ -58,7 +58,7 @@ const ImagesContainer = ({ images }: Props): JSX.Element => {
               onMouseLeave={(): void => {hideOverlayContainer(image)}}
             >
               <div className="img-subcontainer h-100 w-100" >
-                <img src={image.img} alt={image.title} id={image.alt} />
+                <img src={image.img} alt={image.title} id={image.alt} loading="lazy" />
                 <div className='container-overlay d-flex justify-content-center align-items-center invisible' id={image.alt}>
                   <button onClick={(): void => setImg(image)} disabled={enableBtn !== image}>View</button>
                 </div>

@@ -33,7 +33,7 @@ const ImgModal = ({ display, setDisplay, img, setImg }: Props): JSX.Element => {
     <div className={`img-modal ${display ? 'visible' : 'invisible'}`}>
       <div className='overlay' onClick={closeModal}>
         <div className='content'>
-          <img src={img?.img} alt={img?.title} />
+          <img src={img?.img} alt={img?.title} loading="lazy" />
         </div>
       </div>
     </div>

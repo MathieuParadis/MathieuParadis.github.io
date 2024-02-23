@@ -18,11 +18,11 @@ const ContactSection = (): JSX.Element => {
       <h3>CONTACT</h3>
       <div className='content'>
         <div className='contact-box'>
-          <img className='contact-logo' src={darkMode ? mail_dark : mail} alt='Mail logo' />
+          <img className='contact-logo' src={darkMode ? mail_dark : mail} alt='Mail logo' loading="lazy" />
           <p>mathieuyl.paradis@gmail.com</p>
         </div>
         <div className='contact-box'>
-          <img className='contact-logo' src={darkMode ? linkedIn_logo_dark : linkedIn_logo} alt='Linkedin logo' />
+          <img className='contact-logo' src={darkMode ? linkedIn_logo_dark : linkedIn_logo} alt='Linkedin logo' loading="lazy" />
           <p>linkedin.com/in/mathieu-p-26593498/</p>
         </div>
       </div>

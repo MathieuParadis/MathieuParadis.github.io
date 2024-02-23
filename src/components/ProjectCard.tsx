@@ -14,7 +14,7 @@ const ProjectCard = ({ project, setOpenModal }: Props): JSX.Element => {
     <div className='project-card col-12 col-md-6 col-lg-4 my-3 p-0 px-sm-2'>
       <div className='flip-card-inner'>
         <div className='flip-card-front'>
-          <img src={project.img} alt={project.title + ' illustration'} />
+          <img src={project.img} alt={project.title + ' illustration'} loading="lazy" />
         </div>
         <div className='flip-card-back'>
           <button onClick={(): void => setOpenModal(project)}>View project</button>

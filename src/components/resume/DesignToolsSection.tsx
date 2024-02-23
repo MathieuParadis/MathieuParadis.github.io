@@ -20,15 +20,15 @@ const CodingLanguageSection = (): JSX.Element => {
       <h3>DESIGN TOOLS</h3>
       <div className='content'>
         <div className='language-tool-box'>
-          <img className='language-tool-logo' src={darkMode? ai_dark : ai} alt='Illustrator logo' />
+          <img className='language-tool-logo' src={darkMode? ai_dark : ai} alt='Illustrator logo' loading="lazy" />
           <p>Illustrator</p>
         </div>
         <div className='language-tool-box'>
-          <img className='language-tool-logo' src={darkMode ? ps_dark : ps} alt='Photoshop logo' />
+          <img className='language-tool-logo' src={darkMode ? ps_dark : ps} alt='Photoshop logo' loading="lazy" />
           <p>Photoshop</p>
         </div>
         <div className='language-tool-box'>
-          <img className='language-tool-logo' src={darkMode ? figma_dark : figma} alt='Photoshop logo' />
+          <img className='language-tool-logo' src={darkMode ? figma_dark : figma} alt='Photoshop logo' loading="lazy" />
           <p>Figma</p>
         </div>
       </div>

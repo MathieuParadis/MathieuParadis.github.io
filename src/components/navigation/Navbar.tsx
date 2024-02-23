@@ -31,7 +31,7 @@ const Navigation = (): JSX.Element => {
   return (
     <div className='navigation bg-red-500'>
       <div>
-      <img className='logo' src={darkMode ? logo_dark : logo} alt='MP logo' onClick={refreshPage} />
+      <img className='logo' src={darkMode ? logo_dark : logo} alt='MP logo' onClick={refreshPage} loading="lazy" />
       </div>
       <div className='d-flex flex-row justify-content-between'>
         <div className='nav-links pe-4'>

@@ -13,41 +13,41 @@ const CodingLanguageSection = (): JSX.Element => {
         <div className='language-box'>
           <p>French</p>
           <div className='language-rating'>
-            <img className='language-circle' src={circle} alt='circle' />
-            <img className='language-circle' src={circle} alt='circle' />
-            <img className='language-circle' src={circle} alt='circle' />
-            <img className='language-circle' src={circle} alt='circle' />
-            <img className='language-circle' src={circle} alt='circle' />
+            <img className='language-circle' src={circle} alt='circle' loading="lazy" />
+            <img className='language-circle' src={circle} alt='circle' loading="lazy" />
+            <img className='language-circle' src={circle} alt='circle' loading="lazy" />
+            <img className='language-circle' src={circle} alt='circle' loading="lazy" />
+            <img className='language-circle' src={circle} alt='circle' loading="lazy" />
           </div>
         </div>
         <div className='language-box'>
           <p>English</p>
           <div className='language-rating'>
-            <img className='language-circle' src={circle} alt='circle' />
-            <img className='language-circle' src={circle} alt='circle' />
-            <img className='language-circle' src={circle} alt='circle' />
-            <img className='language-circle' src={circle} alt='circle' />
-            <img className='language-circle' src={circle} alt='circle' />
+            <img className='language-circle' src={circle} alt='circle' loading="lazy" />
+            <img className='language-circle' src={circle} alt='circle' loading="lazy" />
+            <img className='language-circle' src={circle} alt='circle' loading="lazy" />
+            <img className='language-circle' src={circle} alt='circle' loading="lazy" />
+            <img className='language-circle' src={circle} alt='circle' loading="lazy" />
           </div>
         </div>
         <div className='language-box'>
           <p>Portuguese</p>
           <div className='language-rating'>
-            <img className='language-circle' src={circle} alt='circle' />
-            <img className='language-circle' src={circle} alt='circle' />
-            <img className='language-circle' src={circle_outline} alt='circle_outline' />
-            <img className='language-circle' src={circle_outline} alt='circle_outline' />
-            <img className='language-circle' src={circle_outline} alt='circle_outline' />
+            <img className='language-circle' src={circle} alt='circle' loading="lazy" />
+            <img className='language-circle' src={circle} alt='circle' loading="lazy" />
+            <img className='language-circle' src={circle_outline} alt='circle_outline' loading="lazy" />
+            <img className='language-circle' src={circle_outline} alt='circle_outline' loading="lazy" />
+            <img className='language-circle' src={circle_outline} alt='circle_outline' loading="lazy" />
           </div>
         </div>
         <div className='language-box'>
           <p>Chinese</p>
           <div className='language-rating'>
-            <img className='language-circle' src={circle} alt='circle' />
-            <img className='language-circle' src={circle_outline} alt='circle_outline' />
-            <img className='language-circle' src={circle_outline} alt='circle_outline' />
-            <img className='language-circle' src={circle_outline} alt='circle_outline' />
-            <img className='language-circle' src={circle_outline} alt='circle_outline' />
+            <img className='language-circle' src={circle} alt='circle' loading="lazy" />
+            <img className='language-circle' src={circle_outline} alt='circle_outline' loading="lazy" />
+            <img className='language-circle' src={circle_outline} alt='circle_outline' loading="lazy" />
+            <img className='language-circle' src={circle_outline} alt='circle_outline' loading="lazy" />
+            <img className='language-circle' src={circle_outline} alt='circle_outline' loading="lazy" />
           </div>
         </div>
       </div>

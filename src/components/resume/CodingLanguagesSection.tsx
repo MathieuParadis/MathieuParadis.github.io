@@ -30,35 +30,35 @@ const CodingLanguageSection = (): JSX.Element => {
       <h3>PROGRAMMING LANGUAGES</h3>
       <div className='content'>
         <div className='language-tool-box'>
-          <img className='language-tool-logo' src={darkMode ? html_dark: html} alt='HTML5 logo' />
+          <img className='language-tool-logo' src={darkMode ? html_dark: html} alt='HTML5 logo' loading="lazy" />
           <p>HTML 5</p>
         </div>
         <div className='language-tool-box'>
-          <img className='language-tool-logo' src={darkMode ? css_dark : css} alt='CSS3 logo' />
+          <img className='language-tool-logo' src={darkMode ? css_dark : css} alt='CSS3 logo' loading="lazy" />
           <p>CSS 3</p>
         </div>
         <div className='language-tool-box'>
-          <img className='language-tool-logo' src={darkMode ? js_dark : js} alt='JS logo' />
+          <img className='language-tool-logo' src={darkMode ? js_dark : js} alt='JS logo' loading="lazy" />
           <p>JavaScript</p>
         </div>
         <div className='language-tool-box'>
-          <img className='language-tool-logo' src={darkMode ? react_dark : react} alt='React logo' />
+          <img className='language-tool-logo' src={darkMode ? react_dark : react} alt='React logo' loading="lazy" />
           <p>React JS</p>
         </div>
         <div className='language-tool-box'>
-          <img className='language-tool-logo' src={darkMode ? next_dark : next} alt='React logo' />
+          <img className='language-tool-logo' src={darkMode ? next_dark : next} alt='React logo' loading="lazy" />
           <p>Next JS</p>
         </div>
         <div className='language-tool-box'>
-          <img className='language-tool-logo' src={darkMode ? ts_dark : ts} alt='React logo' />
+          <img className='language-tool-logo' src={darkMode ? ts_dark : ts} alt='React logo' loading="lazy" />
           <p>Typescript</p>
         </div>
         <div className='language-tool-box'>
-          <img className='language-tool-logo' src={darkMode ? ruby_dark : ruby} alt='Ruby logo' />
+          <img className='language-tool-logo' src={darkMode ? ruby_dark : ruby} alt='Ruby logo' loading="lazy" />
           <p>Ruby</p>
         </div>
         <div className='language-tool-box'>
-          <img className='language-tool-logo' src={darkMode ? rails_dark : rails} alt='Ruby on Rails logo' />
+          <img className='language-tool-logo' src={darkMode ? rails_dark : rails} alt='Ruby on Rails logo' loading="lazy" />
           <p>Rails</p>
         </div>
       </div>

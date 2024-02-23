@@ -24,18 +24,18 @@ const Home = (): JSX.Element => {
           <h3 className='presentation-description'>I’m a full stack web developer based between Europe and Asia.</h3>
           <div className='networks'>
             <a href='https://github.com/MathieuParadis' target='_blank' rel='noreferrer'>
-              <img className='social-network-logo' src={darkMode ? gh_logo_dark : gh_logo} alt='Github logo'/>
+              <img className='social-network-logo' src={darkMode ? gh_logo_dark : gh_logo} alt='Github logo' loading="lazy" />
             </a>
             <a href='https://www.linkedin.com/in/mathieu-p-26593498/' target='_blank' rel='noreferrer'>
-              <img className='social-network-logo' src={darkMode ? in_logo_dark : in_logo} alt='Linkedin logo'/>
+              <img className='social-network-logo' src={darkMode ? in_logo_dark : in_logo} alt='Linkedin logo' loading="lazy" />
             </a>
             <a href='https://www.instagram.com/shewingcat/' target='_blank' rel='noreferrer'>
-              <img className='social-network-logo' src={darkMode ? ig_logo_dark : ig_logo} alt='Instagram logo'/>
+              <img className='social-network-logo' src={darkMode ? ig_logo_dark : ig_logo} alt='Instagram logo' loading="lazy" />
             </a>
           </div>
         </div>
         <div className='illustration mb-3 mb-lg-0'>
-          <img src={koala} alt='Koala drawing' />
+          <img src={koala} alt='Koala drawing' loading="lazy" />
         </div>
       </div>
     </div>
