@@ -1,12 +1,20 @@
 // REACT IMPORTS
 import React, { useEffect } from 'react'
 
-const ProjectModal = ({project}) => {
+// TYPES IMPORTS
+import { type ProjectType } from '../../types/projectTypes'
+
+interface Props { 
+  project: ProjectType
+}
+
+const ProjectModal = (props: Props) => {
+  const { project } = props
+  const modal = document.querySelector('.project-modal') as HTMLElement
+
   const closeModal = () => {
-    const modal = document.querySelector('.project-modal')
     modal.style.visibility = 'hidden'
     document.body.style.overflow = 'auto'
-
   }
 
   window.onclick = (event) => {
@@ -25,7 +33,7 @@ const ProjectModal = ({project}) => {
 
     document.addEventListener('keydown', handleKeyPress)
     return () => document.removeEventListener('keydown', handleKeyPress)
-  }, [])
+  })
 
   return (
     <div className='project-modal'>
