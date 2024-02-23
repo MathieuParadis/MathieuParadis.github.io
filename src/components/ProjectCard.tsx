@@ -1,7 +1,15 @@
 // REACT IMPORT
 import React from 'react'
 
-const ProjectCard = ({project, setOpenModal}) => {
+// TYPES IMPORTS
+import { type ProjectType } from '../types/projectTypes'
+
+interface Props {
+  project: ProjectType
+  setOpenModal: (value: ProjectType) => void
+}
+
+const ProjectCard = ({ project, setOpenModal }: Props): JSX.Element => {
   return (
     <div className='project-card col-12 col-md-6 col-lg-4 my-3 p-0 px-sm-2'>
       <div className='flip-card-inner'>

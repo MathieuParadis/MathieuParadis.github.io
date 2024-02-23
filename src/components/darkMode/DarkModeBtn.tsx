@@ -8,7 +8,7 @@ import DarkMode from '../context/DarkMode'
 import sun from '../../assets/images/sun.svg'
 import moon from '../../assets/images/moon.svg'
 
-const DarkModeBtn = () => {
+const DarkModeBtn = (): JSX.Element => {
   const { darkMode, setDarkMode } = useContext(DarkMode)
 
   return (
