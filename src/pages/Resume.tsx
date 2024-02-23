@@ -9,7 +9,7 @@ import EducationSection from '../components/resume/EducationSection'
 import SpokenLanguagesSection from '../components/resume/SpokenLanguagesSection'
 import WorkSection from '../components/resume/WorkSection'
 
-const Resume = () => {
+const Resume = (): JSX.Element => {
   return (
     <div className='resume'>
       <div className='page'>

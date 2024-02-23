@@ -8,12 +8,12 @@ import ProjectModal from '../components/modals/ProjectModal'
 // COMPONENTS DATA
 import projects from '../data/Projects'
 
-const Projects = () => {
+const Projects = (): JSX.Element => {
   const [currentProject, setCurrentProject] = useState(null)
 
-  const openModal = (project) => {
+  const openModal = (project):void => {
     setCurrentProject(project)
-    const modal = document.querySelector('.project-modal')
+    const modal = document.querySelector('.project-modal') as HTMLElement
     modal.style.visibility = 'visible'
     document.body.style.overflow = 'hidden'
   }

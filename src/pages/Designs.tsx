@@ -11,7 +11,7 @@ import ImagesContainer from '../components/ImagesContainer'
 // DATA IMPORTS
 import { illustrations, logos, posters } from '../data/Designs'
 
-const Designs = () => {
+const Designs = (): JSX.Element => {
   return (
     <div className='designs'>
       <div className='h-100'>

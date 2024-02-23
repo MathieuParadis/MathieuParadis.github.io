@@ -5,7 +5,7 @@ import React, { useEffect } from 'react'
 import { type ProjectType } from '../../types/projectTypes'
 
 interface Props { 
-  project: ProjectType
+  project: ProjectType | null
 }
 
 const ProjectModal = (props: Props) => {
