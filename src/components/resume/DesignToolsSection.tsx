@@ -12,7 +12,7 @@ import figma_dark from '../../assets/logos/figma_dark.svg'
 import ps from '../../assets/logos/ps.svg'
 import ps_dark from '../../assets/logos/ps_dark.svg'
 
-const CodingLanguageSection = () => {
+const CodingLanguageSection = (): JSX.Element => {
   const { darkMode } = useContext(DarkMode)
 
   return (

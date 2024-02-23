@@ -13,7 +13,7 @@ import linkedIn_logo_dark from '../assets/logos/linkedin_dark.svg'
 import mail from '../assets/logos/mail.svg'
 import mail_dark from '../assets/logos/mail_dark.svg'
 
-const Contact = () => {
+const Contact = (): JSX.Element => {
   const { darkMode } = useContext(DarkMode)
 
   return (

@@ -7,8 +7,8 @@ import { NavLink } from 'react-router-dom'
 // COMPONENTS IMPORTS
 import DarkModeBtnMobile from '../darkMode/DarkModeBtnMobile'
 
-const MobileNavigation = () => {
-  const handleMenu = () => {
+const MobileNavigation = (): JSX.Element => {
+  const handleMenu = (): void => {
     document.querySelector?.('.span1')?.classList.toggle('clicked')
     document.querySelector?.('.span2')?.classList.toggle('clicked')
     document.querySelector?.('.span3')?.classList.toggle('clicked')

@@ -17,24 +17,24 @@ import Navbar from './components/navigation/Navbar'
 // CONTEXT IMPORTS
 import DarkMode from './components/context/DarkMode'
 
-const App = () => {
+const App = (): JSX.Element => {
   const [darkMode, setDarkMode] = useState(false)
   const body = document.querySelector('body') as HTMLElement
 
-  const switchMode = () => {
+  const switchMode = (): void => {
     body.classList.toggle('dark-mode')
     localStorage.setItem('darkModePreference', String(!darkMode))
     setDarkMode(!darkMode)
   }
 
-  useEffect(() => {
+  useEffect((): void => {
     if (localStorage.getItem('darkModePreference')) {
       const darkModePreference = localStorage.getItem('darkModePreference')
       setDarkMode(darkModePreference === 'true' ? true : false)
     }
   }, [])
 
-  useEffect(() => {
+  useEffect((): void => {
     darkMode ? body.classList.add('dark-mode') : body.classList.remove('dark-mode')
   }, [darkMode, body.classList])
 

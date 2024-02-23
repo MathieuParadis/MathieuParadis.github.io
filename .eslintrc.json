@@ -17,9 +17,8 @@
       "quotes": ["error", "single"],
       "semi": ["error", "never"],
       "no-multiple-empty-lines": ["error", { "max": 1 }],
-      "eol-last": ["error", "always"]
-
-      // Add your custom rules here
+      "eol-last": ["error", "always"],
+      "@typescript-eslint/explicit-function-return-type": ["error", { "allowTypedFunctionExpressions": false }]
     },
     "settings": {
       "react": {

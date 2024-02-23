@@ -1,3 +1,6 @@
+// TYPES IMPORTS
+import { type ProjectType } from '../types/projectTypes'
+
 // ASSETS IMPORTS
 import neo_hunt_screenshot from '../assets/images/projects/neo-hunt.png'
 import helping_hand from '../assets/images/projects/helping_hand.png'
@@ -8,14 +11,14 @@ import chalet_and_caviar_screenshot from '../assets/images/projects/chalet_and_c
 import follownut_screenshot from '../assets/images/projects/follownut.png'
 import feedtruck_screenshot from '../assets/images/projects/feedtruck.png'
 
-const projects = [
+const projects: ProjectType[] = [
   {
     title: 'Neo Hunt', 
     img: neo_hunt_screenshot,
     url: 'https://neo-hunt.vercel.app/',
     stack: 'NextJS, TypeScript, Tailwind CSS, graphQL',
     description: 'Neo Hunt is an app displaying popular posts from Product Hunt.',
-    isWebsiteURL: true,
+    isWebsiteURL: true
   },
   {
     title: 'Helping Hand',

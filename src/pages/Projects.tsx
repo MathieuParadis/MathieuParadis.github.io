@@ -6,14 +6,14 @@ import ProjectCard from '../components/ProjectCard'
 import ProjectModal from '../components/modals/ProjectModal'
 
 // COMPONENTS DATA
-import projects from '../data/Projects'
+import projects from '../data/projects'
 
-const Projects = () => {
+const Projects = (): JSX.Element => {
   const [currentProject, setCurrentProject] = useState(null)
 
-  const openModal = (project) => {
+  const openModal = (project):void => {
     setCurrentProject(project)
-    const modal = document.querySelector('.project-modal')
+    const modal = document.querySelector('.project-modal') as HTMLElement
     modal.style.visibility = 'visible'
     document.body.style.overflow = 'hidden'
   }
@@ -23,7 +23,7 @@ const Projects = () => {
       <h1 className='ps-2'>Recent projects</h1>
       <div className='projects'>
         {
-          projects.map((project) => {
+          projects.map((project): JSX.Element => {
             return (
               <ProjectCard project={project} setOpenModal={openModal} key={project.title}/>
             )
