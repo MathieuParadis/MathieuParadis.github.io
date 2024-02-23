@@ -22,7 +22,7 @@ import rails_dark from '../../assets/logos/rails_dark.svg'
 import ts from '../../assets/logos/TS.svg'
 import ts_dark from '../../assets/logos/TS_dark.svg'
 
-const CodingLanguageSection = () => {
+const CodingLanguageSection = (): JSX.Element => {
   const { darkMode } = useContext(DarkMode)
 
   return (

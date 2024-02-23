@@ -1,7 +1,10 @@
 // REACT IMPORT
 import React from 'react'
 
-const ExperienceComponent = ({title, location, date, description}) => {
+// TYPES IMPORTS
+import { type ExperienceType } from '../../types/resumeTypes'
+
+const ExperienceComponent = ({ title, location, date, description }: ExperienceType): JSX.Element => {
   return (
     <div className='experience-component'>
       <h4 className='title'>{title}</h4>

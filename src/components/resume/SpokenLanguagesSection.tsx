@@ -5,7 +5,7 @@ import React from 'react'
 import circle from '../../assets/logos/circle.svg'
 import circle_outline from '../../assets/logos/circle_outline.svg'
 
-const CodingLanguageSection = () => {
+const CodingLanguageSection = (): JSX.Element => {
   return (
     <div className='spoken-languages-section'>
       <h3>LANGUAGES</h3>

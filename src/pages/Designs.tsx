@@ -9,7 +9,7 @@ import Tabs from 'react-bootstrap/Tabs'
 import ImagesContainer from '../components/ImagesContainer'
 
 // DATA IMPORTS
-import { illustrations, logos, posters } from '../data/Designs'
+import { illustrations, logos, posters } from '../data/designs'
 
 const Designs = (): JSX.Element => {
   return (

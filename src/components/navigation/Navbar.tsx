@@ -15,12 +15,12 @@ import DarkMode from '../context/DarkMode'
 import logo from '../../assets/logos/logo.svg'
 import logo_dark from '../../assets/logos/logo_dark.svg'
 
-const Navigation = () => {
+const Navigation = (): JSX.Element => {
   const { darkMode } = useContext(DarkMode)
   const location = useLocation()
   const navigate = useNavigate()
 
-  const refreshPage = () => {
+  const refreshPage = (): void => {
     if (location.pathname === '/') {
       window.location.reload()
     } else {
