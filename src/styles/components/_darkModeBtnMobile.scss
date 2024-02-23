@@ -1,0 +1,22 @@
+.dark-mode-btn-mobile {
+  input[type=checkbox] {
+    display: none;
+  }
+
+  input[type=checkbox] + label, input[type=checkbox]:checked + label {
+    display: none;
+
+    @include mobile_and_tablet {
+      width: 40px;
+      display: inline-block;
+    }
+  }
+
+  img.darkmode-logo {
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+} 

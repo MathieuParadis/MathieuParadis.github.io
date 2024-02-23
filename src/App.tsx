@@ -1,5 +1,5 @@
-// REACT IMPORT
-import React from 'react'
+// REACT IMPORTS
+import React, { useEffect, useState } from 'react'
 
 // REACT-ROUTER-DOM IMPORTS
 import { Routes, Route } from 'react-router-dom'
@@ -14,9 +14,33 @@ import Contact from './pages/Contact'
 // COMPONENTS IMPORTS
 import Navbar from './components/navigation/Navbar'
 
+// CONTEXT IMPORTS
+import DarkMode from './components/context/DarkMode'
+
 const App = () => {
+  const [darkMode, setDarkMode] = useState(false)
+  const body = document.querySelector('body') as HTMLElement
+
+  const switchMode = () => {
+    body.classList.toggle('dark-mode')
+    localStorage.setItem('darkModePreference', String(!darkMode))
+    setDarkMode(!darkMode)
+  }
+
+  useEffect(() => {
+    if (localStorage.getItem('darkModePreference')) {
+      const darkModePreference = localStorage.getItem('darkModePreference')
+      setDarkMode(darkModePreference === 'true' ? true : false)
+    }
+  }, [])
+
+  useEffect(() => {
+    darkMode ? body.classList.add('dark-mode') : body.classList.remove('dark-mode')
+  }, [darkMode, body.classList])
+
   return (
     <div className='app'>
+      <DarkMode.Provider value={{ darkMode, setDarkMode: switchMode }}>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -25,6 +49,7 @@ const App = () => {
         <Route path='/resume' element={<Resume />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
+      </DarkMode.Provider>
     </div>
   )
 }
