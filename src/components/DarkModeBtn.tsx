@@ -28,7 +28,7 @@ const DarkModeBtn = ({ isMobile = false }: Props): JSX.Element => {
     )
   } else {
     return (
-      <div className='dark-mode-btn d-flex align-items-center'>
+      <div className='dark-mode-btn flex items-center'>
         <input type='checkbox' className='' id='dark-mode-checkbox' checked={darkMode ? true : false} onChange={setDarkMode}/>
         <label htmlFor='dark-mode-checkbox'>
           <img className='dark-mode-logo' src={darkMode ? sun : moon} alt='Dark mode toggler button' loading="lazy" />
