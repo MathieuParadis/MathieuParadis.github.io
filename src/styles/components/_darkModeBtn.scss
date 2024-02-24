@@ -12,14 +12,6 @@
       display: none;
     }
   }
-
-  img.dark-mode-logo {
-    cursor: pointer;
-
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
 } 
 
 .dark-mode-btn-mobile {
@@ -33,14 +25,6 @@
     @include mobile_and_tablet {
       width: 40px;
       display: inline-block;
-    }
-  }
-
-  img.dark-mode-logo {
-    cursor: pointer;
-
-    &:hover {
-      transform: scale(1.1);
     }
   }
 } 
