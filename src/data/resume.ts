@@ -1,5 +1,23 @@
 // TYPES IMPORTS
-import { type ExperienceType } from '../types/resumeTypes'
+import { type ExperienceType, CodingLanguageType } from '../types/resumeTypes'
+
+// ASSETS IMPORTS
+import html from '../assets/logos/html.svg'
+import html_dark from '../assets/logos/html_dark.svg'
+import css from '../assets/logos/css.svg'
+import css_dark from '../assets/logos/css_dark.svg'
+import js from '../assets/logos/js.svg'
+import js_dark from '../assets/logos/js_dark.svg'
+import next from '../assets/logos/next.svg'
+import next_dark from '../assets/logos/next_dark.svg'
+import react from '../assets/logos/react.svg'
+import react_dark from '../assets/logos/react_dark.svg'
+import ruby from '../assets/logos/ruby.svg'
+import ruby_dark from '../assets/logos/ruby_dark.svg'
+import rails from '../assets/logos/rails.svg'
+import rails_dark from '../assets/logos/rails_dark.svg'
+import ts from '../assets/logos/TS.svg'
+import ts_dark from '../assets/logos/TS_dark.svg'
 
 export const workExperiences: ExperienceType[] = [
   {
@@ -22,7 +40,7 @@ export const workExperiences: ExperienceType[] = [
   }
 ]
 
-export const EducationExperiences: ExperienceType[] = [
+export const educationExperiences: ExperienceType[] = [
   {
     title: 'Bachelor&rsquo;s degree in web development',
     location: 'OpenClassrooms',
@@ -40,5 +58,56 @@ export const EducationExperiences: ExperienceType[] = [
     location: 'Phelma, Grenoble Institute of Technology',
     date: '2012 - 2015',
     description: 'Classes in physics, material properties, and advanced techniques of characterization.'
+  }
+]
+
+export const codingLanguages: CodingLanguageType[] = [
+  {
+    title: 'HTML 5',
+    alt: 'HTML5 logo',
+    imgLight: html,
+    imgDark: html_dark
+  },
+  {
+    title: 'CSS 3',
+    alt: 'CSS3 logo',
+    imgLight: css,
+    imgDark: css_dark
+  },
+  {
+    title: 'JavaScript',
+    alt: 'JS logo',
+    imgLight: js,
+    imgDark: js_dark
+  },
+  {
+    title: 'React JS',
+    alt: 'ReactJS logo',
+    imgLight: react,
+    imgDark: react_dark
+  },
+  {
+    title: 'Next JS',
+    alt: 'NextJS logo',
+    imgLight: next,
+    imgDark: next_dark
+  },
+  {
+    title: 'TypeScript',
+    alt: 'TS logo',
+    imgLight: ts,
+    imgDark: ts_dark
+  },
+  {
+    title: 'Ruby',
+    alt: 'Ruby logo',
+    imgLight: ruby,
+    imgDark: ruby_dark
+  },
+  {
+    title: 'Rails',
+    alt: 'Rails logo',
+    imgLight: rails,
+    imgDark: rails_dark
   }
 ]

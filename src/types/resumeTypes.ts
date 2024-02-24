@@ -4,3 +4,10 @@ export interface ExperienceType {
     date: string
     description: string
 }
+
+export interface CodingLanguageType {
+    title: string
+    alt: string
+    imgLight: string
+    imgDark: string
+}

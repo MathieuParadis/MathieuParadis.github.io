@@ -5,14 +5,14 @@ import React from 'react'
 import ExperienceComponent from './ExperienceComponent'
 
 // DATA IMPORTS
-import { EducationExperiences } from '../../data/resume'
+import { educationExperiences } from '../../data/resume'
 
 const EducationSection = (): JSX.Element => {
   return (
     <div className='work-education-section'>
       <h3>EDUCATION</h3>
       <div className='content'>
-        {EducationExperiences.map((el): JSX.Element => {
+        {educationExperiences.map((el): JSX.Element => {
             return (
               <ExperienceComponent
                 key={el.title}
