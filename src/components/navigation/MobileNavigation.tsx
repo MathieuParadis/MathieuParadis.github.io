@@ -5,7 +5,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 // COMPONENTS IMPORTS
-import DarkModeBtnMobile from '../darkMode/DarkModeBtnMobile'
+import DarkModeBtn from '../DarkModeBtn'
 
 const MobileNavigation = (): JSX.Element => {
   const handleMenu = (): void => {
@@ -29,7 +29,7 @@ const MobileNavigation = (): JSX.Element => {
         <NavLink className='menu-link' to='/designs' onClick={handleMenu}>Designs</NavLink>
         <NavLink className='menu-link' to='/resume' onClick={handleMenu}>Resume</NavLink>
         <NavLink className='menu-link' to='/contact' onClick={handleMenu}>Contact</NavLink>
-        <DarkModeBtnMobile />
+        <DarkModeBtn isMobile={true} />
       </div>
     </div>
   )

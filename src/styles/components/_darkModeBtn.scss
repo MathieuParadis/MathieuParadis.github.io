@@ -13,7 +13,30 @@
     }
   }
 
-  img.darkmode-logo {
+  img.dark-mode-logo {
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+} 
+
+.dark-mode-btn-mobile {
+  input[type=checkbox] {
+    display: none;
+  }
+
+  input[type=checkbox] + label, input[type=checkbox]:checked + label {
+    display: none;
+
+    @include mobile_and_tablet {
+      width: 40px;
+      display: inline-block;
+    }
+  }
+
+  img.dark-mode-logo {
     cursor: pointer;
 
     &:hover {

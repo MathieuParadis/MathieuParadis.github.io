@@ -5,7 +5,7 @@ import React, { useContext } from 'react'
 import { NavLink, useLocation, useNavigate } from 'react-router-dom'
 
 // COMPONENTS IMPORTS
-import DarkModeBtn from '../darkMode/DarkModeBtn'
+import DarkModeBtn from '../DarkModeBtn'
 import MobileNavigation from './MobileNavigation'
 
 // CONTEXT IMPORTS
