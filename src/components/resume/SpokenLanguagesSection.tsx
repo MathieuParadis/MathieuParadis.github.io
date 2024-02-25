@@ -3,7 +3,7 @@ import React from 'react'
 
 // ASSETS IMPORTS
 import circle from '../../assets/logos/circle.svg'
-import circle_outline from '../../assets/logos/circle_outline.svg'
+import circle_outline from '../../assets/logos/empty_circle.svg'
 
 const CodingLanguageSection = (): JSX.Element => {
   return (

@@ -2,7 +2,8 @@
 import {
   type CodingLanguageType,
   type DesignToolType,
-  type ExperienceType
+  type ExperienceType,
+  type SpokenLanguageType
 } from '../types/resumeTypes'
 
 // ASSETS IMPORTS
@@ -143,5 +144,33 @@ export const designTools: DesignToolType[] = [
     alt: 'Figma logo',
     imgLight: figma,
     imgDark: figma_dark
+  }
+]
+
+export const spokenLanguages: SpokenLanguageType[] = [
+  {
+    title: 'French',
+    maxRating: 5,
+    actualRating: 5
+  },
+  {
+    title: 'English',
+    maxRating: 5,
+    actualRating: 5
+  },
+  {
+    title: 'Portuguese',
+    maxRating: 5,
+    actualRating: 2
+  },
+  {
+    title: 'Italian',
+    maxRating: 5,
+    actualRating: 2
+  },
+  {
+    title: 'Chinese',
+    maxRating: 5,
+    actualRating: 1
   }
 ]
