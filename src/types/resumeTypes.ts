@@ -18,3 +18,9 @@ export interface DesignToolType {
     imgLight: string
     imgDark: string
 }
+
+export interface SpokenLanguageType {
+    title: string
+    maxRating: number
+    actualRating: number
+}

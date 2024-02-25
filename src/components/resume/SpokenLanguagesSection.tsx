@@ -3,53 +3,43 @@ import React from 'react'
 
 // ASSETS IMPORTS
 import circle from '../../assets/logos/circle.svg'
-import circle_outline from '../../assets/logos/circle_outline.svg'
+import empty_circle from '../../assets/logos/empty_circle.svg'
+
+// DATA IMPORTS
+import { spokenLanguages } from '../../data/resume'
 
 const CodingLanguageSection = (): JSX.Element => {
   return (
     <div className='spoken-languages-section'>
       <h3>LANGUAGES</h3>
       <div className='content'>
-        <div className='language-box'>
-          <p>French</p>
-          <div className='language-rating'>
-            <img className='language-circle' src={circle} alt='circle' loading="lazy" />
-            <img className='language-circle' src={circle} alt='circle' loading="lazy" />
-            <img className='language-circle' src={circle} alt='circle' loading="lazy" />
-            <img className='language-circle' src={circle} alt='circle' loading="lazy" />
-            <img className='language-circle' src={circle} alt='circle' loading="lazy" />
-          </div>
-        </div>
-        <div className='language-box'>
-          <p>English</p>
-          <div className='language-rating'>
-            <img className='language-circle' src={circle} alt='circle' loading="lazy" />
-            <img className='language-circle' src={circle} alt='circle' loading="lazy" />
-            <img className='language-circle' src={circle} alt='circle' loading="lazy" />
-            <img className='language-circle' src={circle} alt='circle' loading="lazy" />
-            <img className='language-circle' src={circle} alt='circle' loading="lazy" />
-          </div>
-        </div>
-        <div className='language-box'>
-          <p>Portuguese</p>
-          <div className='language-rating'>
-            <img className='language-circle' src={circle} alt='circle' loading="lazy" />
-            <img className='language-circle' src={circle} alt='circle' loading="lazy" />
-            <img className='language-circle' src={circle_outline} alt='circle_outline' loading="lazy" />
-            <img className='language-circle' src={circle_outline} alt='circle_outline' loading="lazy" />
-            <img className='language-circle' src={circle_outline} alt='circle_outline' loading="lazy" />
-          </div>
-        </div>
-        <div className='language-box'>
-          <p>Chinese</p>
-          <div className='language-rating'>
-            <img className='language-circle' src={circle} alt='circle' loading="lazy" />
-            <img className='language-circle' src={circle_outline} alt='circle_outline' loading="lazy" />
-            <img className='language-circle' src={circle_outline} alt='circle_outline' loading="lazy" />
-            <img className='language-circle' src={circle_outline} alt='circle_outline' loading="lazy" />
-            <img className='language-circle' src={circle_outline} alt='circle_outline' loading="lazy" />
-          </div>
-        </div>
+        {spokenLanguages.map((el): JSX.Element => {
+          return (
+            <div className='language-box' key={el.title}>
+              <p>{el.title}</p>
+              <div className='language-rating'>
+                {[...Array(el.actualRating)].map((el, i): JSX.Element => (
+                  <img
+                    key={i}
+                    className='language-circle'
+                    src={circle}
+                    alt='circle'
+                    loading="lazy"
+                  />
+                ))}
+                {[...Array(el.maxRating - el.actualRating)].map((el, i): JSX.Element => (
+                  <img
+                    key={i}
+                    className='language-circle'
+                    src={empty_circle}
+                    alt='circle'
+                    loading="lazy"
+                  />
+                ))}
+              </div>
+            </div>
+          )
+        })}
       </div>
     </div>
   )
