@@ -1,7 +1,12 @@
 // TYPES IMPORTS
-import { type ExperienceType, CodingLanguageType } from '../types/resumeTypes'
+import {
+  type CodingLanguageType,
+  type DesignToolType,
+  type ExperienceType
+} from '../types/resumeTypes'
 
 // ASSETS IMPORTS
+// Coding Languages Assets
 import html from '../assets/logos/html.svg'
 import html_dark from '../assets/logos/html_dark.svg'
 import css from '../assets/logos/css.svg'
@@ -18,6 +23,14 @@ import rails from '../assets/logos/rails.svg'
 import rails_dark from '../assets/logos/rails_dark.svg'
 import ts from '../assets/logos/TS.svg'
 import ts_dark from '../assets/logos/TS_dark.svg'
+
+// Design Tools Assets
+import ai from '../assets/logos/ai.svg'
+import ai_dark from '../assets/logos/ai_dark.svg'
+import figma from '../assets/logos/figma.svg'
+import figma_dark from '../assets/logos/figma_dark.svg'
+import ps from '../assets/logos/ps.svg'
+import ps_dark from '../assets/logos/ps_dark.svg'
 
 export const workExperiences: ExperienceType[] = [
   {
@@ -109,5 +122,26 @@ export const codingLanguages: CodingLanguageType[] = [
     alt: 'Rails logo',
     imgLight: rails,
     imgDark: rails_dark
+  }
+]
+
+export const designTools: DesignToolType[] = [
+  {
+    title: 'Illustrator',
+    alt: 'Illustrator logo',
+    imgLight: ai,
+    imgDark: ai_dark
+  },
+  {
+    title: 'Photoshop',
+    alt: 'Photoshop logo',
+    imgLight: ps,
+    imgDark: ps_dark
+  },
+  {
+    title: 'Figma',
+    alt: 'Figma logo',
+    imgLight: figma,
+    imgDark: figma_dark
   }
 ]
