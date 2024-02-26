@@ -11,7 +11,7 @@ interface Props {
 
 const ProjectCard = ({ project, setOpenModal }: Props): JSX.Element => {
   return (
-    <div className='project-card col-12 col-md-6 col-lg-4 my-3 p-0 px-sm-2'>
+    <div className='project-card'>
       <div className='flip-card-inner'>
         <div className='flip-card-front'>
           <img src={project.img} alt={project.title + ' illustration'} loading="lazy" />
