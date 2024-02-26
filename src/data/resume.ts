@@ -56,7 +56,7 @@ export const workExperiences: ExperienceType[] = [
 
 export const educationExperiences: ExperienceType[] = [
   {
-    title: 'Bachelor&rsquo;s degree in web development',
+    title: 'Bachelor\'s degree in web development',
     location: 'OpenClassrooms',
     date: 'Nov. 2021 - Jun. 2022',
     description: 'Use of front-end libraries and frameworks such as Bootstrap, and ReactJS. Building of sites backend in Ruby. Run SQL queries on databases.'

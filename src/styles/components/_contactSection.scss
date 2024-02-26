@@ -1,44 +1,16 @@
-.contact-section {
-  margin-bottom: 3em;
-
-  h3 {
-    font-size: 1.3em;
-    margin-bottom: 0.5em;
-    font-weight: bold;
-
-    @include mobile {    
-      margin-bottom: 0.4em;
-    }
-  }
-
-  .content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    .contact-box {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      margin-top: 1em;
-      margin-bottom: 1em;
-      
-      p {
-        margin: 0px;
-        padding-left: 8px;
-
-        @include mobile {
-          font-size: 0.85em;
-        }
-      }
-    }
+.contact-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
   
-    .contact-logo {
-      width: 35px;
+  p {
+    margin: 0px;
+    padding-left: 8px;
 
-      @include mobile {
-        width: 30px;
-      }
+    @include mobile {
+      font-size: 0.85em;
     }
   }
 }
