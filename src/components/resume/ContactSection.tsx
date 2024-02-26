@@ -14,15 +14,25 @@ const ContactSection = (): JSX.Element => {
   const { darkMode } = useContext(DarkMode)
 
   return (
-    <div className='contact-section'>
-      <h3>CONTACT</h3>
-      <div className='content'>
+    <div className='mb-[60px]'>
+      <h3 className='text-2xl font-black mb-[10px]'>CONTACT</h3>
+      <div>
         <div className='contact-box'>
-          <img className='contact-logo' src={darkMode ? mail_dark : mail} alt='Mail logo' loading="lazy" />
+          <img
+            className='w-[30px] md:w-[35px]'
+            src={darkMode ? mail_dark : mail}
+            alt='Mail logo'
+            loading="lazy"
+          />
           <p>mathieuyl.paradis@gmail.com</p>
         </div>
         <div className='contact-box'>
-          <img className='contact-logo' src={darkMode ? linkedIn_logo_dark : linkedIn_logo} alt='Linkedin logo' loading="lazy" />
+        <img
+            className='w-[30px] md:w-[35px]'
+            src={darkMode ? linkedIn_logo_dark : linkedIn_logo}
+            alt='Mail logo'
+            loading="lazy"
+          />
           <p>linkedin.com/in/mathieu-p-26593498/</p>
         </div>
       </div>
