@@ -13,8 +13,8 @@ import { illustrations, logos, posters } from '../data/designs'
 
 const Designs = (): JSX.Element => {
   return (
-    <div className='designs'>
-      <div className='h-100'>
+    <div className='py-[30px] px-[20px] lg:py-[27px] lg:px-[50px] my-0 mx-[-45px]'>
+      <div className='tabs-wrapper h-full'>
         <Tabs
           defaultActiveKey='logos'
           id='justify-tab-example'
