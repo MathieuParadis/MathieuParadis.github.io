@@ -11,7 +11,7 @@ import WorkSection from '../components/resume/WorkSection'
 
 const Resume = (): JSX.Element => {
   return (
-    <div className='resume'>
+    <div className='py-[30px] px-[40px] lg:py-[27px] lg:px-[50px] my-0 mx-[-45px] min-h-screen bg-[var(--basic-color-grey-light)]'>
       <div className='page'>
         <div className='content'>
           <div className='head'>
@@ -19,7 +19,7 @@ const Resume = (): JSX.Element => {
             <p className='mb-0'>French Web Developer based between Europe and Asia. Passionate about minimalism, sustainability, coffee and bread.</p>
             <p className='mt-2'>I recently picked on design to develop beautiful and impactful interfaces.</p>
           </div>
-          <div className='body d-flex flex-column flex-lg-row'>
+          <div className='body flex flex-col lg:flex-row'>
             <div className='first-section w-100 w-lg-50'>
               <WorkSection />
               <EducationSection />

@@ -1,76 +1,65 @@
-.resume {
-  margin: 0px -45px;
-  padding: 27px 50px;
-  background-color: var(--basic-color-grey-light);
-  min-height: 100vh;
+.page {
+  box-shadow: 0 1px 3px var(--shadow-color1), 0 1px 2px var(--shadow-color2);
+  background-color: var(--basic-color-white);
+  border-radius: 4px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 30px;
 
-  @include mobile_and_tablet {
-    padding: 30px 40px;   
+  @include mobile {
+    margin-top: -10px;   
+    margin-bottom: -10px;   
+    margin-left: -20px;
+    margin-right: -20px;    
+    padding: 10px;
   }
 
-  .page {
-    box-shadow: 0 1px 3px var(--shadow-color1), 0 1px 2px var(--shadow-color2);
-    background-color: var(--basic-color-white);
-    border-radius: 4px;
-    margin-left: 100px;
-    margin-right: 100px;
-    padding: 30px;
-
-    @include mobile {
-      margin-top: -10px;   
-      margin-bottom: -10px;   
-      margin-left: -20px;
-      margin-right: -20px;    
-      padding: 10px;
-    }
-
-    @include tablet {
-      margin-left: 45px;
-      margin-right: 45px;
-      padding: 20px;
-    }
+  @include tablet {
+    margin-left: 45px;
+    margin-right: 45px;
+    padding: 20px;
+  }
 
 
-    .content {
-      .head {
-        margin-bottom: 2em;
+  .content {
+    .head {
+      margin-bottom: 2em;
 
-        h1 {
-          font-size: 3em;
+      h1 {
+        font-size: 3em;
 
-          @include mobile {    
-            font-size: 2rem; 
-          }
-        }
-
-        p {
-          margin-top: 1em;
-          font-size: 1.3rem; 
-          text-align: justify;
-    
-          @include mobile {   
-            font-size: 1.1rem;  
-          }
+        @include mobile {    
+          font-size: 2rem; 
         }
       }
 
-      .body {
-        margin-top: 3em;
-
-        .first-section {
-          padding-right: 10px;
-
-          @include mobile_and_tablet {   
-            padding-right: 0px;
-          }
+      p {
+        margin-top: 1em;
+        font-size: 1.3rem; 
+        text-align: justify;
+  
+        @include mobile {   
+          font-size: 1.1rem;  
         }
+      }
+    }
 
-        .second-section {
-          padding-left: 10px;
+    .body {
+      margin-top: 3em;
 
-          @include mobile_and_tablet {   
-            padding-left: 0px;
-          }
+      .first-section {
+        padding-right: 10px;
+
+        @include mobile_and_tablet {   
+          padding-right: 0px;
+        }
+      }
+
+      .second-section {
+        padding-left: 10px;
+
+        @include mobile_and_tablet {   
+          padding-left: 0px;
         }
       }
     }
