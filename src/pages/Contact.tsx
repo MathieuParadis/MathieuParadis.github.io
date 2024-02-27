@@ -18,16 +18,16 @@ const Contact = (): JSX.Element => {
 
   return (
     <div className='my-[30px] mx-[10px] md:mx-[45px] flex justify-center items-center'>
-      <div className='contact-card overflow-hidden'>
+      <div className='flex flex-col lg:flex-row my-[-10px] mx-[-30px] md:mx-[45px] lg:m-[30px] p-[20px] md:p-[30px] lg:p-0 rounded overflow-hidden min-h-[70vh] min-w-[70vw] shadow-[0_35px_60px_-15px_var(--shadow-color2)]'>
         <div className='flex flex-col justify-center w-full lg:w-[40%] lg:bg-[var(--lighter-prim-color)] mb-8 lg:mb-0 px-[30px]'>
           <h1 className='text-3xl md:text-5xl text-center lg:text-left'>Get in touch</h1>
           <p className='text-xl lg:text-2xl text-center lg:text-left'>Drop a message or contact me directly!</p>
-          <div className='contact-means'>
+          <div className='flex justify-center lg:justify-start mt-4 gap-4'>
             <a href='mailto:mathieuyl.paradis@gmail.com' target='_blank' rel='noreferrer'>
-              <img className='contact-logo pe-4' src={darkMode ? mail_dark : mail} alt='Mail logo' loading="lazy"/>
+              <img className='h-[30px] md:h-[40px] hover:scale-110' src={darkMode ? mail_dark : mail} alt='Mail logo' loading="lazy"/>
             </a>
             <a href='https://www.linkedin.com/in/mathieu-p-26593498/' target='_blank' rel='noreferrer'>
-              <img className='contact-logo' src={darkMode ? linkedIn_logo_dark : linkedIn_logo} alt='Linkedin logo' loading="lazy" />
+              <img className='h-[30px] md:h-[40px] hover:scale-110' src={darkMode ? linkedIn_logo_dark : linkedIn_logo} alt='Linkedin logo' loading="lazy" />
             </a>
           </div>
         </div>
