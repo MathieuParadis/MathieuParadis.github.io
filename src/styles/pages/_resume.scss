@@ -19,49 +19,4 @@
     margin-right: 45px;
     padding: 20px;
   }
-
-
-  .content {
-    .head {
-      margin-bottom: 2em;
-
-      h1 {
-        font-size: 3em;
-
-        @include mobile {    
-          font-size: 2rem; 
-        }
-      }
-
-      p {
-        margin-top: 1em;
-        font-size: 1.3rem; 
-        text-align: justify;
-  
-        @include mobile {   
-          font-size: 1.1rem;  
-        }
-      }
-    }
-
-    .body {
-      margin-top: 3em;
-
-      .first-section {
-        padding-right: 10px;
-
-        @include mobile_and_tablet {   
-          padding-right: 0px;
-        }
-      }
-
-      .second-section {
-        padding-left: 10px;
-
-        @include mobile_and_tablet {   
-          padding-left: 0px;
-        }
-      }
-    }
-  }
 }
