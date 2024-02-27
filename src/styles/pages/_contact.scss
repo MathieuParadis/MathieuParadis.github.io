@@ -1,112 +1,47 @@
-.contact{
-  margin: 30px 45px;
+.contact-card {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  margin: 30px;
+  align-items: stretch;
+  box-shadow: 0 1px 3px var(--shadow-color1), 0 1px 2px var(--shadow-color2);
+  border-radius: 5px;
+  min-height: 70vh;
+  min-width: 70vw;
 
-  @include mobile {    
-    margin: 30px 10px;
+  @include mobile {
+    flex-direction: column;
+    margin-top: -10px;   
+    margin-bottom: -10px;   
+    margin-left: -30px;
+    margin-right: -30px;    
+    padding: 20px;
   }
 
-  .contact-card {
+  @include tablet {
+    flex-direction: column;
+    margin-left: 45px;
+    margin-right: 45px;
+    padding: 30px;
+  }
+
+  .contact-means {
     display: flex;
-    flex-direction: row;
-    margin: 30px;
-    align-items: stretch;
-    box-shadow: 0 1px 3px var(--shadow-color1), 0 1px 2px var(--shadow-color2);
-    border-radius: 5px;
-    min-height: 70vh;
-    min-width: 70vw;
+    margin-top: 1em;
 
-    @include mobile {
-      flex-direction: column;
-      margin-top: -10px;   
-      margin-bottom: -10px;   
-      margin-left: -30px;
-      margin-right: -30px;    
-      padding: 20px;
-    }
-
-    @include tablet {
-      flex-direction: column;
-      margin-left: 45px;
-      margin-right: 45px;
-      padding: 30px;
-    }
-
-    .card-left, .card-right {
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-
-    .card-left {
-      display: flex;
-      flex-direction: column;
+    @include mobile_and_tablet {    
+      margin: 0;
       justify-content: center;
-      width: 40%;
-      background-color: var(--lighter-prim-color);
-      border-top-left-radius: 4px;
-      border-bottom-left-radius: 4px;
-
-      @include mobile_and_tablet {
-        width: 100%;
-        background-color: transparent;
-        margin-bottom: 2em;
-      }
-
-      h1 {
-        font-size: 3em;
-
-        @include mobile {    
-          font-size: 2rem; 
-          text-align: center;
-        }
-
-        @include tablet {    
-          text-align: center;
-        }
-      }
-
-      p {
-        font-size: 1.3rem; 
-        text-align: justify;
-
-        @include mobile_and_tablet {   
-          font-size: 1.1rem; 
-          text-align: center; 
-        }
-      }
-
-      .contact-means {
-        display: flex;
-        margin-top: 1em;
-
-        @include mobile_and_tablet {    
-          margin: 0;
-          justify-content: center;
-        }
-
-        .contact-logo {
-          height: 40px;
-
-          @include mobile {    
-            height: 30px;
-          }
-
-          &:hover {
-            transform: scale(1.1)
-          }
-        }
-      }
     }
 
-    .card-right {
-      width: 60%;
-      display: flex;
+    .contact-logo {
+      height: 40px;
 
-      @include mobile_and_tablet {
-        width: 100%;
-        padding: 0px;
+      @include mobile {    
+        height: 30px;
+      }
+
+      &:hover {
+        transform: scale(1.1)
       }
     }
   }

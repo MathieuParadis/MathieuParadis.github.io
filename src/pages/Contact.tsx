@@ -17,11 +17,11 @@ const Contact = (): JSX.Element => {
   const { darkMode } = useContext(DarkMode)
 
   return (
-    <div className='contact'>
-      <div className='contact-card'>
-        <div className='card-left'>
-          <h1>Get in touch</h1>
-          <p>Drop a message or contact me directly!</p>
+    <div className='my-[30px] mx-[10px] md:mx-[45px] flex justify-center items-center'>
+      <div className='contact-card overflow-hidden'>
+        <div className='flex flex-col justify-center w-full lg:w-[40%] lg:bg-[var(--lighter-prim-color)] mb-8 lg:mb-0 px-[30px]'>
+          <h1 className='text-3xl md:text-5xl text-center lg:text-left'>Get in touch</h1>
+          <p className='text-xl lg:text-2xl text-center lg:text-left'>Drop a message or contact me directly!</p>
           <div className='contact-means'>
             <a href='mailto:mathieuyl.paradis@gmail.com' target='_blank' rel='noreferrer'>
               <img className='contact-logo pe-4' src={darkMode ? mail_dark : mail} alt='Mail logo' loading="lazy"/>
@@ -31,7 +31,7 @@ const Contact = (): JSX.Element => {
             </a>
           </div>
         </div>
-        <div className='card-right'>
+        <div className='flex w-full lg:w-[60%] py-0 lg:py-4 px-[30px]'>
           <ContactForm />
         </div>
       </div>
