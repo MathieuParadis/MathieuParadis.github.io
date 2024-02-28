@@ -15,7 +15,7 @@ const ContactSection = (): JSX.Element => {
 
   return (
     <div className='mb-[60px]'>
-      <h3 className='text-2xl font-black mb-[10px]'>CONTACT</h3>
+      <h3 className='text-2xl font-black mb-[20px]'>CONTACT</h3>
       <div className='flex flex-col gap-4'>
         <div className='flex items- gap-2'>
           <img
