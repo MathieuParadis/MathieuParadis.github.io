@@ -1,16 +1,6 @@
 .languages-tools-section {
   margin-bottom: 3em;
 
-  h3 {
-    font-size: 1.3em;
-    margin-bottom: 0.5em;
-    font-weight: bold;
-
-    @include mobile {    
-      margin-bottom: 0.4em;
-    }
-  }
-
   .content {
     display: flex;
     justify-content: space-between;
