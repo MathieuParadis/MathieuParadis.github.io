@@ -11,19 +11,19 @@ const CodingLanguageSection = (): JSX.Element => {
   const { darkMode } = useContext(DarkMode)
 
   return (
-    <div className='languages-tools-section'>
-      <h3 className='text-2xl font-black mb-[10px]'>DESIGN TOOLS</h3>
-      <div className='content'>
+    <div className='mb-[60px]'>
+      <h3 className='text-2xl font-black mb-[20px]'>DESIGN TOOLS</h3>
+      <div className='flex justify-between flex-wrap'>
         {designTools.map((el): JSX.Element => {
           return (
-            <div className='language-tool-box' key={el.title}>
+            <div className='flex items-center gap-2 w-1/2 mb-8' key={el.title}>
               <img
-                className='language-tool-logo'
+                className='h-[35px] md:h-[45px] lg:h-[50px]'
                 src={darkMode ? el.imgDark: el.imgLight}
                 alt={el.alt}
                 loading="lazy"
               />
-              <p>{el.title}</p>
+              <p className='m-0 text-lg'>{el.title}</p>
             </div>
           )
         })}

@@ -11,7 +11,7 @@ import { spokenLanguages } from '../../data/resume'
 const CodingLanguageSection = (): JSX.Element => {
   return (
     <div className='spoken-languages-section'>
-      <h3 className='text-2xl font-black mb-[10px]'>LANGUAGES</h3>
+      <h3 className='text-2xl font-black mb-[20px]'>LANGUAGES</h3>
       <div className='content'>
         {spokenLanguages.map((el): JSX.Element => {
           return (

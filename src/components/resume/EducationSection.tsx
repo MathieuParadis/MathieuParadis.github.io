@@ -10,7 +10,7 @@ import { educationExperiences } from '../../data/resume'
 const EducationSection = (): JSX.Element => {
   return (
     <div className='mb-[60px]'>
-      <h3 className='text-2xl font-black mb-[10px]'>EDUCATION</h3>
+      <h3 className='text-2xl font-black mb-[20px]'>EDUCATION</h3>
       {educationExperiences.map((el): JSX.Element => {
           return (
             <ExperienceComponent
