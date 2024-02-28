@@ -12,7 +12,7 @@ const CodingLanguageSection = (): JSX.Element => {
 
   return (
     <div className='languages-tools-section'>
-      <h3>PROGRAMMING LANGUAGES</h3>
+      <h3 className='text-2xl font-black mb-[10px]'>PROGRAMMING LANGUAGES</h3>
       <div className='content'>
         {codingLanguages.map((el): JSX.Element => {
           return (
