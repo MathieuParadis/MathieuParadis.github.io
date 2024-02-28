@@ -17,24 +17,28 @@ const Home = (): JSX.Element => {
   const { darkMode } = useContext(DarkMode)
 
   return (
-    <div className='home'>
-      <div className='d-flex flex-column-reverse align-items-center flex-lg-row justify-content-lg-between'>
-        <div className='presentation d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start px-2 px-lg-0'>
-          <h1 className='presentation-name'>Hello, I am<br></br><strong>Mathieu Paradis</strong></h1>
-          <h3 className='presentation-description'>I’m a full stack web developer based between Europe and Asia.</h3>
-          <div className='networks'>
+    <div className='grow flex justify-center items-center lg:mx-[45px] lg:py-[27px] lg:px-[50px]'>
+      <div className='w-full h-full flex flex-col-reverse items-center gap-4 lg:flex-row lg:justify-between text-center'>
+        <div className='lg:w-[50%] flex flex-col items-center lg:items-start lg:text-start'>
+          <h1 className='text-4xl md:text-5xl pb-4 md:pb-0'>
+            Hello, I am
+            <br></br>
+            <span className='font-bold text-6xl'>Mathieu Paradis</span>
+          </h1>
+          <h3 className='text-xl md:text-2xl pb-4'>I’m a full stack web developer based between Europe and Asia.</h3>
+          <div className='flex justify-between w-2/3 md:w-1/2 mt-8'>
             <a href='https://github.com/MathieuParadis' target='_blank' rel='noreferrer'>
-              <img className='social-network-logo' src={darkMode ? gh_logo_dark : gh_logo} alt='Github logo' loading="lazy" />
+              <img className='h-[40px] md:h-[55px] hover:scale-110' src={darkMode ? gh_logo_dark : gh_logo} alt='Github logo' loading="lazy" />
             </a>
             <a href='https://www.linkedin.com/in/mathieu-p-26593498/' target='_blank' rel='noreferrer'>
-              <img className='social-network-logo' src={darkMode ? in_logo_dark : in_logo} alt='Linkedin logo' loading="lazy" />
+              <img className='h-[40px] md:h-[55px] hover:scale-110' src={darkMode ? in_logo_dark : in_logo} alt='Linkedin logo' loading="lazy" />
             </a>
             <a href='https://www.instagram.com/shewingcat/' target='_blank' rel='noreferrer'>
-              <img className='social-network-logo' src={darkMode ? ig_logo_dark : ig_logo} alt='Instagram logo' loading="lazy" />
+              <img className='h-[40px] md:h-[55px] hover:scale-110' src={darkMode ? ig_logo_dark : ig_logo} alt='Instagram logo' loading="lazy" />
             </a>
           </div>
         </div>
-        <div className='illustration mb-3 mb-lg-0'>
+        <div className='flex justify-center items-center w-full h-full lg:w-[39%] mb-3 lg:mb-0'>
           <img src={koala} alt='Koala drawing' loading="lazy" />
         </div>
       </div>
