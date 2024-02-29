@@ -17,7 +17,7 @@ const MobileNavigation = (): JSX.Element => {
   }
 
   return (
-    <div className=''>
+    <div>
       <div className='hamburger-box' onClick={handleMenu}>
         <span className='span1'></span>
         <span className='span2'></span>
