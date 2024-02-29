@@ -48,16 +48,16 @@ const ImagesContainer = ({ images }: Props): JSX.Element => {
   return (
     <>
       <ImgModal display={display} setDisplay={setDisplay} img={img} setImg={setImg} />
-      <div className='relative p-2 flex flex-wrap justify-between items-center'>
+      <div className='grid gap-2 border-2 border-[var(--sec-color)] p-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
         {images.map((image): JSX.Element => {
           return (
             <div 
-              className="col-12 col-sm-6 col-md-4 col-lg-3 relative border-2 border-[var(--sec-color)] h-[300px] p-2 cursor-pointer overflow-hidden" 
+              className="relative h-[300px] cursor-pointer overflow-hidden" 
               key={image.alt}
               onMouseEnter={(): void => {showOverlayContainer(image)}}
               onMouseLeave={(): void => {hideOverlayContainer(image)}}
             >
-              <div className="border-4 border-[var(--sec-color)] h-full w-full">
+              <div className="border-4 border-[var(--sec-color)] p-4 h-full w-full">
                 <img
                   id={image.alt}
                   className='h-full w-full object-cover'
