@@ -30,10 +30,15 @@ const ImgModal = ({ display, setDisplay, img, setImg }: Props): JSX.Element => {
   })
 
   return (
-    <div className={`img-modal ${display ? 'visible' : 'invisible'}`}>
-      <div className='overlay' onClick={closeModal}>
-        <div className='content'>
-          <img src={img?.img} alt={img?.title} loading="lazy" />
+    <div className={`relative ${display ? 'visible' : 'invisible'}`}>
+      <div className='fixed top-0 left-0 flex justify-center items-center h-screen w-full z-[200] bg-black' onClick={closeModal}>
+        <div className='fixed flex justify-center items-center h-screen min-w-[50%] z-[201] bg-white'>
+          <img
+            className='h-full w-full object-contain'
+            src={img?.img}
+            alt={img?.title}
+            loading="lazy"
+          />
         </div>
       </div>
     </div>
