@@ -29,12 +29,12 @@ const Navigation = (): JSX.Element => {
   }
 
   return (
-    <div className='navigation bg-red-500'>
+    <div className='flex justify-between py-[30px] px-[20px] md:px-[40px] lg:px-[50px] lg:my-0 lg:mx-[-45px]'>
       <div>
-      <img className='logo' src={darkMode ? logo_dark : logo} alt='MP logo' onClick={refreshPage} loading="lazy" />
+      <img className='cursor-pointer w-[60px]' src={darkMode ? logo_dark : logo} alt='MP logo' onClick={refreshPage} loading="lazy" />
       </div>
-      <div className='d-flex flex-row justify-content-between'>
-        <div className='nav-links pe-4'>
+      <div className='flex justify-between'>
+        <div className='nav-links hidden lg:flex items-center h-[50px] pr-4'>
           <NavLink to='/'>Home</NavLink>
           <NavLink to='/projects'>Projects</NavLink>
           <NavLink to='/designs'>Designs</NavLink>
