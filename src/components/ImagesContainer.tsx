@@ -48,7 +48,7 @@ const ImagesContainer = ({ images }: Props): JSX.Element => {
   return (
     <>
       <ImgModal display={display} setDisplay={setDisplay} img={img} setImg={setImg} />
-      <div className='imgs-container d-flex flex-wrap justify-content-between align-items-center'>
+      <div className='imgs-container flex flex-wrap justify-between items-center'>
         {images.map((image): JSX.Element => {
           return (
             <div 
@@ -57,10 +57,16 @@ const ImagesContainer = ({ images }: Props): JSX.Element => {
               onMouseEnter={(): void => {showOverlayContainer(image)}}
               onMouseLeave={(): void => {hideOverlayContainer(image)}}
             >
-              <div className="img-subcontainer h-100 w-100" >
+              <div className="img-subcontainer h-full w-full">
                 <img src={image.img} alt={image.title} id={image.alt} loading="lazy" />
-                <div className='container-overlay d-flex justify-content-center align-items-center invisible' id={image.alt}>
-                  <button onClick={(): void => setImg(image)} disabled={enableBtn !== image}>View</button>
+                <div className='container-overlay flex justify-center items-center invisible' id={image.alt}>
+                  <button
+                    className='w-[100px] border-0 rounded-[40px] p-[10px] bg-[var(--prim-color)] text-white hover:scale-105 focus:outline-none'
+                    onClick={(): void => setImg(image)}
+                    disabled={enableBtn !== image}
+                  >
+                    View
+                  </button>
                 </div>
               </div>
             </div>

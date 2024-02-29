@@ -25,23 +25,6 @@
         left: 0;
         height: 100%;
         width: 100%;
-
-        button {
-          width: 100px;   
-          border: none;
-          border-radius: 40px;
-          padding: 10px;
-          background-color: var(--prim-color);
-          color: white;
-
-          &:hover {
-            scale: 1.05;
-          }
-
-          &:focus {
-            outline: none;
-          }
-        }
       }
     }
   }  
