@@ -48,18 +48,24 @@ const ImagesContainer = ({ images }: Props): JSX.Element => {
   return (
     <>
       <ImgModal display={display} setDisplay={setDisplay} img={img} setImg={setImg} />
-      <div className='imgs-container flex flex-wrap justify-between items-center'>
+      <div className='relative p-2 flex flex-wrap justify-between items-center'>
         {images.map((image): JSX.Element => {
           return (
             <div 
-              className="img-container col-12 col-sm-6 col-md-4 col-lg-3" 
+              className="col-12 col-sm-6 col-md-4 col-lg-3 relative border-2 border-[var(--sec-color)] h-[300px] p-2 cursor-pointer overflow-hidden" 
               key={image.alt}
               onMouseEnter={(): void => {showOverlayContainer(image)}}
               onMouseLeave={(): void => {hideOverlayContainer(image)}}
             >
-              <div className="img-subcontainer h-full w-full">
-                <img src={image.img} alt={image.title} id={image.alt} loading="lazy" />
-                <div className='container-overlay flex justify-center items-center invisible' id={image.alt}>
+              <div className="border-4 border-[var(--sec-color)] h-full w-full">
+                <img
+                  id={image.alt}
+                  className='h-full w-full object-cover'
+                  src={image.img}
+                  alt={image.title}
+                  loading="lazy"
+                />
+                <div id={image.alt} className='flex justify-center items-center invisible absolute top-0 left-0 h-full w-full'>
                   <button
                     className='w-[100px] border-0 rounded-[40px] p-[10px] bg-[var(--prim-color)] text-white hover:scale-105 focus:outline-none'
                     onClick={(): void => setImg(image)}
