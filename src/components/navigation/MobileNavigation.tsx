@@ -24,11 +24,41 @@ const MobileNavigation = (): JSX.Element => {
         <span className='span3'></span>
       </div>
       <div className='menu'>
-        <NavLink className='menu-link' to='/' onClick={handleMenu}>Home</NavLink>
-        <NavLink className='menu-link' to='/projects' onClick={handleMenu}>Projects</NavLink>
-        <NavLink className='menu-link' to='/designs' onClick={handleMenu}>Designs</NavLink>
-        <NavLink className='menu-link' to='/resume' onClick={handleMenu}>Resume</NavLink>
-        <NavLink className='menu-link' to='/contact' onClick={handleMenu}>Contact</NavLink>
+        <NavLink
+          className='menu-link'
+          to='/'
+          onClick={handleMenu}
+        >
+          Home
+        </NavLink>
+        <NavLink
+          className='menu-link'
+          to='/projects'
+          onClick={handleMenu}
+        >
+          Projects
+        </NavLink>
+        <NavLink
+          className='menu-link'
+          to='/designs'
+          onClick={handleMenu}
+        >
+          Designs
+        </NavLink>
+        <NavLink
+          className='menu-link'
+          to='/resume'
+          onClick={handleMenu}
+        >
+          Resume
+        </NavLink>
+        <NavLink
+          className='menu-link'
+          to='/contact'
+          onClick={handleMenu}
+        >
+          Contact
+        </NavLink>
         <DarkModeBtn isMobile={true} />
       </div>
     </div>
