@@ -13,8 +13,8 @@ const Projects = (): JSX.Element => {
 
   const openModal = (project):void => {
     setCurrentProject(project)
-    const modal = document.querySelector('.project-modal') as HTMLElement
-    modal.style.visibility = 'visible'
+    const modal = document.querySelector('#project-modal') as HTMLElement
+    modal.classList.remove('invisible')
     document.body.style.overflow = 'hidden'
   }
 
