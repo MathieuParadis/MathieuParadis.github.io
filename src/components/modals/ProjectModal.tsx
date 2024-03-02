@@ -36,7 +36,7 @@ const ProjectModal = (props: Props): JSX.Element => {
   })
 
   return (
-    <div className='project-modal'>
+    <div className='project-modal fixed top-0 left-0 h-screen flex justify-center items-center z-[100]'>
       <div className='project-modal-overlay'></div>
       <div className='project-modal-content'>
         {project &&
