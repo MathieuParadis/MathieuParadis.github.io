@@ -10,10 +10,11 @@ interface Props {
 
 const ProjectModal = (props: Props): JSX.Element => {
   const { project } = props
-  const modal = document.querySelector('.project-modal') as HTMLElement
+  const modal = document.querySelector('#project-modal') as HTMLElement
 
   const closeModal = (): void => {
-    modal.style.visibility = 'hidden'
+    // modal.style.visibility = 'hidden'
+    modal.classList.add('invisible')
     document.body.style.overflow = 'auto'
   }
 
@@ -36,7 +37,10 @@ const ProjectModal = (props: Props): JSX.Element => {
   })
 
   return (
-    <div className='project-modal fixed top-0 left-0 h-screen flex justify-center items-center z-[100]'>
+    <div
+      id='project-modal'
+      className='fixed top-0 left-0 h-screen flex justify-center items-center z-[100] invisible'
+    >
       <div className='project-modal-overlay'></div>
       <div className='project-modal-content'>
         {project &&
