@@ -165,12 +165,7 @@ li {
 
 a {
   text-decoration: none;
-  color: var(--sec-color);
   cursor: pointer;
-
-  &:visited, &:hover {
-    color: var(--sec-color);
-  }
 }
 
 .blurr {

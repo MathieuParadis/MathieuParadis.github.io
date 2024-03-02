@@ -28,21 +28,5 @@
     border: 3px solid var(--prim-color);
     border-radius: 25px;
     text-align: center;
-
-    .project-link {
-      display: flex;
-      justify-content: center;
-      width: 150px;   
-      border: 1px solid var(--third-color);
-      border-radius: 40px;
-      padding: 10px;
-      background-color: var(--basic-color-white);
-      color: var(--third-color);
-
-      &:hover {
-        background-color: var(--third-color);
-        color: white;
-      }
-    }
   }
 }

@@ -50,7 +50,12 @@ const ProjectModal = (props: Props): JSX.Element => {
             />
             <p>{project.description}</p>
             <p><strong>Stack:</strong><br></br>{project.stack}</p>
-            <a href={project.url} target='_blank' className='project-link' rel='noreferrer'>
+            <a
+              className='flex justify-center w-[150px] mt-4 p-2 border-[1px] border-[var(--third-color)] bg-[var(--basic-color-white)] text-[var(--third-color)] rounded-full hover:bg-[var(--third-color)] hover:text-white'
+              href={project.url}
+              target='_blank'
+              rel='noreferrer'
+            >
               {project.isWebsiteURL ? 'Visit website' : 'See repository'}
             </a>
           </>
