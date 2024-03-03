@@ -11,13 +11,23 @@ interface Props {
 
 const ProjectCard = ({ project, setOpenModal }: Props): JSX.Element => {
   return (
-    <div className='project-card'>
+    <div className='project-card h-[250px] w-full rounded-2xl'>
       <div className='flip-card-inner'>
         <div className='flip-card-front'>
-          <img src={project.img} alt={project.title + ' illustration'} loading="lazy" />
+          <img
+            className='w-full h-full'
+            src={project.img}
+            alt={project.title + ' illustration'}
+            loading="lazy"
+          />
         </div>
         <div className='flip-card-back'>
-          <button onClick={(): void => setOpenModal(project)}>View project</button>
+          <button
+            className='w-[150px] border-none rounded-full p-[10px] bg-[var(--third-color)] text-white hover:bg-[var(--darker-third-color)] focus:outline-none'
+            onClick={(): void => setOpenModal(project)}
+          >
+            View project
+          </button>
         </div>
       </div>
     </div>
