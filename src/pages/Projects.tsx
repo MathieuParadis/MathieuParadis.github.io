@@ -15,7 +15,7 @@ const Projects = (): JSX.Element => {
     setCurrentProject(project)
     const modal = document.querySelector('#project-modal') as HTMLElement
     modal.classList.remove('invisible')
-    document.body.style.overflow = 'hidden'
+    document.body.classList.add('overflow-hidden')
   }
 
   return (

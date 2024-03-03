@@ -14,7 +14,7 @@ const ProjectModal = (props: Props): JSX.Element => {
 
   const closeModal = (): void => {
     modal.classList.add('invisible')
-    document.body.style.overflow = 'auto'
+    document.body.classList.remove('overflow-hidden')
   }
 
   window.onclick = (event): void => {
