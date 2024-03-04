@@ -102,6 +102,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 30px;
     transition: all .5s;
 
     &.clicked {
@@ -111,7 +112,7 @@
     }
 
     .menu-link{
-      margin-bottom: 35px;
+      // margin-bottom: 35px;
       font-size: 2.5rem;
       transition: all .5s;
       text-decoration: none;
