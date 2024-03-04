@@ -17,7 +17,7 @@ const ContactSection = (): JSX.Element => {
     <div className='mb-[60px]'>
       <h3 className='text-2xl font-black mb-[20px]'>CONTACT</h3>
       <div className='flex flex-col gap-4'>
-        <div className='flex items- gap-2'>
+        <div className='flex items-center gap-2'>
           <img
             className='w-[30px] md:w-[35px]'
             src={darkMode ? mail_dark : mail}
