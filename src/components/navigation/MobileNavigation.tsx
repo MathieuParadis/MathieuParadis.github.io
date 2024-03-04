@@ -7,6 +7,9 @@ import { NavLink } from 'react-router-dom'
 // COMPONENTS IMPORTS
 import DarkModeBtn from '../DarkModeBtn'
 
+// DATA IMPORTS
+import { routes } from '../../data/routes'
+
 const MobileNavigation = (): JSX.Element => {
   const handleMenu = (): void => {
     document.querySelector?.('.span1')?.classList.toggle('clicked')
@@ -24,41 +27,18 @@ const MobileNavigation = (): JSX.Element => {
         <span className='span3'></span>
       </div>
       <div className='menu'>
-        <NavLink
-          className='menu-link'
-          to='/'
-          onClick={handleMenu}
-        >
-          Home
-        </NavLink>
-        <NavLink
-          className='menu-link'
-          to='/projects'
-          onClick={handleMenu}
-        >
-          Projects
-        </NavLink>
-        <NavLink
-          className='menu-link'
-          to='/designs'
-          onClick={handleMenu}
-        >
-          Designs
-        </NavLink>
-        <NavLink
-          className='menu-link'
-          to='/resume'
-          onClick={handleMenu}
-        >
-          Resume
-        </NavLink>
-        <NavLink
-          className='menu-link'
-          to='/contact'
-          onClick={handleMenu}
-        >
-          Contact
-        </NavLink>
+        {routes.map((route): JSX.Element => {
+          return (
+            <NavLink
+              key={route.id}
+              to={route.path}
+              className='menu-link'
+              onClick={handleMenu}
+            >
+              {route.title}
+            </NavLink>
+          )
+        })}
         <DarkModeBtn isMobile={true} />
       </div>
     </div>

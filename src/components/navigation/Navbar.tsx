@@ -15,6 +15,9 @@ import DarkMode from '../context/DarkMode'
 import logo from '../../assets/logos/logo.svg'
 import logo_dark from '../../assets/logos/logo_dark.svg'
 
+// DATA IMPORTS
+import { routes } from '../../data/routes'
+
 const Navigation = (): JSX.Element => {
   const { darkMode } = useContext(DarkMode)
   const location = useLocation()
@@ -35,11 +38,9 @@ const Navigation = (): JSX.Element => {
       </div>
       <div className='flex justify-between'>
         <div className='nav-links hidden lg:flex items-center h-[50px] pr-4'>
-          <NavLink to='/'>Home</NavLink>
-          <NavLink to='/projects'>Projects</NavLink>
-          <NavLink to='/designs'>Designs</NavLink>
-          <NavLink to='/resume'>Resume</NavLink>
-          <NavLink to='/contact'>Contact</NavLink>
+          {routes.map((route): JSX.Element => {
+            return <NavLink key={route.id} to={route.path}>{route.title}</NavLink>
+          })}
         </div>
         <DarkModeBtn />
         <MobileNavigation />
