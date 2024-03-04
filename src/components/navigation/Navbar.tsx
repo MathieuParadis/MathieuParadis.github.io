@@ -32,7 +32,7 @@ const Navigation = (): JSX.Element => {
   }
 
   return (
-    <div className='flex justify-between py-[30px]'>
+    <div className='flex justify-between py-[30px] px-[-45px] md:px-[40px] lg:px-[50px] lg:my-0 lg:mx-[-50px]'>
       <div>
       <img className='cursor-pointer w-[60px]' src={darkMode ? logo_dark : logo} alt='MP logo' onClick={refreshPage} loading="lazy" />
       </div>
