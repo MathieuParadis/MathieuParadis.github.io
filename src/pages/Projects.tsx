@@ -21,7 +21,7 @@ const Projects = (): JSX.Element => {
   return (
     <div className='grow py-[30px] px-[15px] md:px-[30px] lg:px-[45px]'>
       <h1 className='text-center text-2xl md:text-4xl font-bold mb-[20px] md:mb-[40px]'>Recent projects</h1>
-      <div className='grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-[50px]'>
+      <div className='grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:mx-[20px] lg:mx-[40px] 2xl:mx-[50px]'>
         {
           projects.map((project): JSX.Element => {
             return (
