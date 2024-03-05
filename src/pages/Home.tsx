@@ -17,8 +17,8 @@ const Home = (): JSX.Element => {
   const { darkMode } = useContext(DarkMode)
 
   return (
-    <div className='grow flex justify-center items-center py-[30px] px-[20px] lg:py-[27px] lg:px-[50px] my-0 mx-[-50px]'>
-      <div className='w-full h-full flex flex-col-reverse items-center gap-4 lg:flex-row lg:justify-between text-center'>
+    <div className='grow flex justify-center items-center py-[30px] px-[15px] md:px-[30px] lg:px-[45px]'>
+      <div className='h-full w-[1200px] flex flex-col-reverse items-center gap-4 lg:flex-row lg:justify-between text-center'>
         <div className='lg:w-[50%] flex flex-col items-center lg:items-start lg:text-start'>
           <h1 className='text-4xl md:text-5xl pb-4 md:pb-0'>
             Hello, I am
@@ -38,7 +38,7 @@ const Home = (): JSX.Element => {
             </a>
           </div>
         </div>
-        <div className='flex justify-center items-center w-full h-full lg:w-[39%] mb-3 lg:mb-0'>
+        <div className='flex justify-center items-center w-full h-full lg:w-[39%] lg:mb-0'>
           <img src={koala} alt='Koala drawing' loading="lazy" />
         </div>
       </div>
