@@ -30,7 +30,7 @@ const Resume = (): JSX.Element => {
             <ContactSection />
           </div>
         </div>
-        </div>
+      </div>
     </div>
   )
 }
