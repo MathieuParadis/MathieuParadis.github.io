@@ -18,7 +18,7 @@ const Contact = (): JSX.Element => {
 
   return (
     <div className='grow flex justify-center items-center py-[30px] px-[15px] md:px-[30px] lg:px-[45px]'>
-      <div className='flex flex-col lg:flex-row my-[-10px] mx-[-30px] md:mx-[45px] lg:m-[30px] p-[20px] md:p-[30px] lg:p-0 rounded overflow-hidden min-h-[70vh] min-w-[70vw] shadow-[0_35px_60px_-15px_var(--shadow-color2)]'>
+      <div className='flex flex-col lg:flex-row p-[20px] md:p-[30px] lg:p-0 rounded overflow-hidden min-h-[70vh] min-w-[70vw] shadow-[0_35px_60px_-15px_var(--shadow-color2)]'>
         <div className='flex flex-col justify-center w-full text-center lg:w-[40%] lg:bg-[var(--lighter-prim-color)] mb-8 lg:mb-0 lg:px-[30px]'>
           <h1 className='text-3xl md:text-4xl xl:text-5xl lg:text-left mb-3'>Get in touch</h1>
           <p className='text-xl lg:text-2xl lg:text-left'>Drop a message or contact me directly!</p>

@@ -32,7 +32,6 @@ const Designs = (): JSX.Element => {
           </Tab>
         </Tabs> 
       </div>
-
     </div>
   )
 }
