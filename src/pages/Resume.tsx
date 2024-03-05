@@ -11,8 +11,8 @@ import WorkSection from '../components/resume/WorkSection'
 
 const Resume = (): JSX.Element => {
   return (
-    <div className='py-[30px] px-[20px] lg:py-[27px] lg:px-[50px] my-0 mx-[-50px] min-h-screen bg-[var(--basic-color-grey-light)]'>
-      <div className='p-[10px] md:p-[20px] lg:p-[30px] my-[-10px] mx-[-20px] md:mx-[45px] lg:mx-[100px] rounded bg-[var(--basic-color-white)] shadow-[0_4px_6px_-1px_var(--shadow-color1),0_2px_4px_-2px_var(--shadow-color2)]'>
+    <div className='grow flex justify-center items-center bg-[var(--basic-color-grey-light)] py-[30px] px-[15px] md:px-[30px] lg:px-[45px]'>
+      <div className='p-[10px] md:p-[20px] lg:p-[30px] max-w-[1200px] rounded bg-[var(--basic-color-white)] shadow-[0_4px_6px_-1px_var(--shadow-color1),0_2px_4px_-2px_var(--shadow-color2)]'>
         <div className='mb-8'>
           <h1 className='font-bold text-4xl md:text-5xl'>Mathieu Paradis</h1>
           <p className='text-lg md:text-xl mt-3'>French Web Developer based between Europe and Asia. Passionate about minimalism, sustainability, coffee and bread.</p>

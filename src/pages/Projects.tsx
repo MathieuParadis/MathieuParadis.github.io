@@ -19,7 +19,7 @@ const Projects = (): JSX.Element => {
   }
 
   return (
-    <div className='py-[30px] px-[20px] lg:py-[27px] lg:px-[50px] my-0 mx-[-50px]'>
+    <div className='grow py-[30px] px-[15px] md:px-[30px] lg:px-[45px]'>
       <h1 className='mx-[50px] text-center text-2xl md:text-4xl font-bold mb-[20px] md:mb-[40px]'>Recent projects</h1>
       <div className='grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-[50px]'>
         {
