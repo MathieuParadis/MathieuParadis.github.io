@@ -1,10 +1,11 @@
 .tabs-wrapper {
   button.nav-link {
     color: var(--sec-color);
+    border-bottom: none;
   }
 
   button.nav-link.active {
-    color: var(--darker-prim-color);
-    background-color: var(--basic-color-white);
+    color: var(--prim-color);
+    background-color: var(--active-tab-color);
   }
 }
