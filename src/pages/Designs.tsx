@@ -14,7 +14,7 @@ import { illustrations, logos, posters } from '../data/designs'
 const Designs = (): JSX.Element => {
   return (
     <div className='grow flex justify-center items-center py-[30px] px-[15px] md:px-[30px] lg:px-[45px]'>
-      <div className='tabs-wrapper h-full'>
+      <div className='tabs-wrapper w-full h-full'>
         <Tabs
           defaultActiveKey='logos'
           id='justify-tab-example'
