@@ -107,29 +107,29 @@ const ContactForm = (): JSX.Element => {
 
       // see doc : https://www.emailjs.com/docs/examples/reactjs/
       // emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form, 'YOUR_USER_ID')
-        emailjs.sendForm('contact_service', 'contact_service', form, USER_ID)
+      emailjs.sendForm('contact_service', 'contact_service', form, USER_ID)
         .then((result): void => {
-            console.log(result.text)
-            formNotification?.classList.remove('empty-field')
-            formNotification?.classList.remove('sending')
-            formNotification?.classList.remove('http-error')
-            formNotification?.classList.add('sent')
+          console.log(result.text)
+          formNotification?.classList.remove('empty-field')
+          formNotification?.classList.remove('sending')
+          formNotification?.classList.remove('http-error')
+          formNotification?.classList.add('sent')
 
-            inputs.map((input): void => input?.classList.remove('error'))
-            setName('')
-            setEmail('')
-            setSubject('')
-            setMessage('')
+          inputs.map((input): void => input?.classList.remove('error'))
+          setName('')
+          setEmail('')
+          setSubject('')
+          setMessage('')
 
-            setTimeout((): void => {
-              formNotification?.classList.remove('sent')
-            }, 5000)
-        }, (error): void => {
-            console.log(error.text)
-            formNotification?.classList.remove('empty-field')
-            formNotification?.classList.remove('sending')
+          setTimeout((): void => {
             formNotification?.classList.remove('sent')
-            formNotification?.classList.add('http-error')
+          }, 5000)
+        }, (error): void => {
+          console.log(error.text)
+          formNotification?.classList.remove('empty-field')
+          formNotification?.classList.remove('sending')
+          formNotification?.classList.remove('sent')
+          formNotification?.classList.add('http-error')
         })
 
     } else {

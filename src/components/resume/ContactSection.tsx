@@ -27,7 +27,7 @@ const ContactSection = (): JSX.Element => {
           <p className='m-0 text-lg'>mathieuyl.paradis@gmail.com</p>
         </div>
         <div className='flex items-center gap-2'>
-        <img
+          <img
             className='w-[30px] md:w-[35px]'
             src={darkMode ? linkedIn_logo_dark : linkedIn_logo}
             alt='Mail logo'
