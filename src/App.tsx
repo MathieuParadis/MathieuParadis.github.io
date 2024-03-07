@@ -41,14 +41,14 @@ const App = (): JSX.Element => {
   return (
     <div className='app'>
       <DarkMode.Provider value={{ darkMode, setDarkMode: switchMode }}>
-      <Navbar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/projects' element={<Projects />} />
-        <Route path='/designs' element={<Designs />} />
-        <Route path='/resume' element={<Resume />} />
-        <Route path='/contact' element={<Contact />} />
-      </Routes>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/designs' element={<Designs />} />
+          <Route path='/resume' element={<Resume />} />
+          <Route path='/contact' element={<Contact />} />
+        </Routes>
       </DarkMode.Provider>
     </div>
   )
