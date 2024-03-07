@@ -23,16 +23,18 @@ const ProjectModal = (props: Props): JSX.Element => {
     closeModal()
   }
 
-  useEffect((): void => {
-    // close modal on esc
-    const handleKeyPress = (e): void => {
-      if (e.keyCode === 27) {
+  // Close modal on Escape
+  useEffect((): (() => void) => {
+    const close = (e: KeyboardEvent): void => {
+      if (e.key === 'Escape') {
         closeModal()
       }
     }
 
-    document.addEventListener('keydown', handleKeyPress)
-    document.removeEventListener('keydown', handleKeyPress)
+    window.addEventListener('keydown', close)
+    return (): void => {
+      window.removeEventListener('keydown', close)
+    }
   })
 
   return (
