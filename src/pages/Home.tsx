@@ -25,7 +25,7 @@ const Home = (): JSX.Element => {
             <br></br>
             <span className='font-bold text-6xl'>Mathieu Paradis</span>
           </h1>
-          <h3 className='text-xl md:text-2xl pb-4'>I’m a full stack web developer based between Europe and Asia.</h3>
+          <h2 className='text-xl md:text-2xl pb-4'>I’m a full stack web developer based between Europe and Asia.</h2>
           <div className='flex justify-between w-2/3 md:w-1/2 mt-8'>
             <a href='https://github.com/MathieuParadis' target='_blank' rel='noreferrer'>
               <img className='h-[40px] md:h-[55px] hover:scale-110' src={darkMode ? gh_logo_dark : gh_logo} alt='Github logo' loading="lazy" />
@@ -39,7 +39,7 @@ const Home = (): JSX.Element => {
           </div>
         </div>
         <div className='flex justify-center items-center w-full h-full lg:w-[39%] lg:mb-0'>
-          <img src={koala} alt='Koala drawing' loading="lazy" />
+          <img className='' src={koala} alt='Koala drawing' loading="lazy" />
         </div>
       </div>
     </div>
