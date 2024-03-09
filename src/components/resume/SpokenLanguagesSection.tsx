@@ -11,7 +11,7 @@ import { spokenLanguages } from '../../data/resume'
 const CodingLanguageSection = (): JSX.Element => {
   return (
     <div className='mb-[60px]'>
-      <h3 className='text-2xl font-black mb-[20px]'>LANGUAGES</h3>
+      <h2 className='text-2xl font-black mb-[20px]'>LANGUAGES</h2>
       {spokenLanguages.map((el): JSX.Element => {
         return (
           <div className='flex items-center w-full mb-4 gap-2' key={el.title}>

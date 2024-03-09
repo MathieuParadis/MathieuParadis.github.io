@@ -12,7 +12,7 @@ const CodingLanguageSection = (): JSX.Element => {
 
   return (
     <div className='mb-[60px]'>
-      <h3 className='text-2xl font-black mb-[20px]'>PROGRAMMING LANGUAGES</h3>
+      <h2 className='text-2xl font-black mb-[20px]'>PROGRAMMING LANGUAGES</h2>
       <div className='flex justify-between flex-wrap'>
         {codingLanguages.map((el): JSX.Element => {
           return (
