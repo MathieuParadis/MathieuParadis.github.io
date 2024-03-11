@@ -21,12 +21,12 @@ const DarkModeBtn = ({ isMobile = false }: Props): JSX.Element => {
     return (
       <div className='dark-mode-btn-mobile flex items-center'>
         <input
-          id='dark-mode-checkbox'
+          id='dark-mode-checkbox-mobile'
           type='checkbox'
           checked={darkMode ? true : false}
           onChange={setDarkMode}
         />
-        <label htmlFor='dark-mode-checkbox'>
+        <label htmlFor='dark-mode-checkbox-mobile'>
           <img
             className='cursor-pointer transition transform hover:scale-110'
             src={darkMode ? sun_reverse : moon_reverse}
