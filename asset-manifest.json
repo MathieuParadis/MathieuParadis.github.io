@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5d690610.css",
-    "main.js": "/static/js/main.dbe64237.js",
+    "main.js": "/static/js/main.a1356436.js",
     "static/media/move_and_groove.png": "/static/media/move_and_groove.b821c4d5e9c707a24b07.png",
     "static/media/movie_festival.png": "/static/media/movie_festival.0fec095f729a81dea704.png",
     "static/media/chalet_and_caviar.png": "/static/media/chalet_and_caviar.5dd082dcecdeba42027b.png",
@@ -58,16 +58,16 @@
     "static/media/logo_dark.svg": "/static/media/logo_dark.2f995c7884d56b1f2e771e1953f9f90d.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.0b77022ee283da0da7ef687bbaf59704.svg",
     "static/media/logo.svg": "/static/media/logo.e18784bc5a6aa53c093581e6b88069a4.svg",
+    "index.html": "/index.html",
     "static/media/moon_reverse.svg": "/static/media/moon_reverse.7e5d0421dc6981ddc28f09cc9f46cffb.svg",
     "static/media/moon.svg": "/static/media/moon.c741cd374c95bc4c5a0d436d9a47c322.svg",
-    "index.html": "/index.html",
     "static/media/empty_circle.svg": "/static/media/empty_circle.880879cc4ef200e79f3abceed1d232ed.svg",
     "static/media/circle.svg": "/static/media/circle.525dbfe62cde85ac0da7ffc4d1a69e2a.svg",
     "main.5d690610.css.map": "/static/css/main.5d690610.css.map",
-    "main.dbe64237.js.map": "/static/js/main.dbe64237.js.map"
+    "main.a1356436.js.map": "/static/js/main.a1356436.js.map"
   },
   "entrypoints": [
     "static/css/main.5d690610.css",
-    "static/js/main.dbe64237.js"
+    "static/js/main.a1356436.js"
   ]
 }
