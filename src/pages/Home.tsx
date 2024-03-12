@@ -39,7 +39,7 @@ const Home = (): JSX.Element => {
           </div>
         </div>
         <div className='flex justify-center items-center w-full h-full lg:w-[39%] lg:mb-0'>
-          <img className='' src={koala} alt='Koala drawing' loading="lazy" />
+          <img src={koala} alt='Koala drawing' loading="lazy" />
         </div>
       </div>
     </div>
