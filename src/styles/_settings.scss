@@ -37,7 +37,6 @@ $warning-bg: #fff3cd;
 $footer-color:#ebebeb;
 $shadow-color1: rgba(0, 0, 0, 0.12);
 $shadow-color2: rgba(0, 0, 0, 0.24);
-$active-tab-color: rgb(243 244 246);
 
 // ----- NIGHT MODE (DARK) ----- //
 $color-1-dark: #42afaa;
@@ -54,7 +53,6 @@ $warning-dark: #f1f173;
 $footer-color-dark:#7e7e7e;
 $shadow-color1-dark: rgba(255, 255, 255, 0.88);
 $shadow-color2-dark: rgba(255, 255, 255, 0.76);
-$active-tab-color-dark: rgb(228 228 231);;
 
 
 // $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
@@ -81,7 +79,6 @@ $active-tab-color-dark: rgb(228 228 231);;
   --footer-color:#{$footer-color};
   --shadow-color1:#{$shadow-color1};
   --shadow-color2:#{$shadow-color2};
-  --active-tab-color:#{$active-tab-color};
 }
 
 .dark-mode {
@@ -107,7 +104,6 @@ $active-tab-color-dark: rgb(228 228 231);;
   --footer-color:#{$footer-color-dark};
   --shadow-color1:#{$shadow-color1-dark};
   --shadow-color2:#{$shadow-color2-dark};
-  --active-tab-color:#{$active-tab-color-dark};
 
 }
 

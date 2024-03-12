@@ -34,7 +34,12 @@ const Navigation = (): JSX.Element => {
   return (
     <div className='flex justify-between py-[30px] px-[15px] md:px-[30px] lg:px-[45px]'>
       <div>
-        <img className='cursor-pointer w-[60px]' src={darkMode ? logo_dark : logo} alt='MP logo' onClick={refreshPage} loading="lazy" />
+        <img
+          className='cursor-pointer w-[60px]'
+          src={darkMode ? logo_dark : logo}
+          alt='MP logo' onClick={refreshPage} 
+          loading='lazy'
+        />
       </div>
       <div className='flex justify-between'>
         <div className='nav-links hidden lg:flex items-center h-[50px] pr-4'>
