@@ -5,7 +5,7 @@
   justify-content: space-around;
   width: 100%;
 
-  @include mobile_and_tablet {
+  @media screen and (max-width: theme('screens.lg')) {
     align-items: center;
   }
 

@@ -2,12 +2,6 @@
 
 // $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ VARIABLES $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
-// -------------------- SCREEN SIZE VARIABLES -------------------- //
-$small-phone-viewport: 575px;
-$phone-viewport: 768px;
-$tablet-viewport: 992px;
-
-
 // -------------------- FONTS VARIABLES -------------------- //
 $font-1: "Poppins", sans-serif;
 
@@ -105,22 +99,6 @@ $shadow-color2-dark: rgba(255, 255, 255, 0.76);
   --shadow-color1:#{$shadow-color1-dark};
   --shadow-color2:#{$shadow-color2-dark};
 
-}
-
-@mixin small_mobile {
-  @media (max-width: $small-phone-viewport) { @content; }
-}
-
-@mixin mobile {
-  @media (max-width: $phone-viewport) { @content; }
-}
-
-@mixin tablet {
-  @media (min-width: $phone-viewport) and (max-width: $tablet-viewport) { @content; }
-}
-
-@mixin mobile_and_tablet {
-  @media (max-width: $tablet-viewport) { @content; }
 }
 
 * {
