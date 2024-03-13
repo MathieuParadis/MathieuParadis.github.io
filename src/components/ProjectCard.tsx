@@ -24,7 +24,7 @@ const ProjectCard = ({ project, setOpenModal }: Props): JSX.Element => {
         <div className='flip-card-back'>
           <p className='font-semibold mb-3'>{project.title}</p>
           <button
-            className='w-[150px] border-none rounded-full p-[10px] bg-[var(--third-color)] text-white hover:bg-[var(--darker-third-color)] focus:outline-none'
+            className='w-[150px] rounded-full p-[10px] border-[1px] border-[var(--third-color)] bg-[var(--basic-color-white)] text-[var(--third-color)] hover:bg-[var(--third-color)] hover:text-[var(--basic-color-white)] focus:outline-none'
             onClick={(): void => setOpenModal(project)}
           >
             View project
