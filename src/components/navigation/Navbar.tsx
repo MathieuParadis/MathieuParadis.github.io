@@ -16,7 +16,7 @@ import logo from '../../assets/logos/logo.svg'
 import logo_dark from '../../assets/logos/logo_dark.svg'
 
 // DATA IMPORTS
-import { routes } from '../../data/routes'
+import { routes, routesObject } from '../../data/routes'
 
 const Navigation = (): JSX.Element => {
   const { darkMode } = useContext(DarkMode)
@@ -24,10 +24,10 @@ const Navigation = (): JSX.Element => {
   const navigate = useNavigate()
 
   const refreshPage = (): void => {
-    if (location.pathname === '/') {
+    if (location.pathname === routesObject.home.path) {
       window.location.reload()
     } else {
-      navigate('/')
+      navigate(routesObject.home.path)
     }
   }
 

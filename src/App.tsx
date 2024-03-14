@@ -17,6 +17,9 @@ import Navbar from './components/navigation/Navbar'
 // CONTEXT IMPORTS
 import DarkMode from './components/context/DarkMode'
 
+// DATA IMPORTS
+import { routesObject } from './data/routes'
+
 const App = (): JSX.Element => {
   const [darkMode, setDarkMode] = useState(false)
   const body = document.querySelector('body') as HTMLElement
@@ -43,11 +46,11 @@ const App = (): JSX.Element => {
       <DarkMode.Provider value={{ darkMode, setDarkMode: switchMode }}>
         <Navbar />
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/projects' element={<Projects />} />
-          <Route path='/designs' element={<Designs />} />
-          <Route path='/resume' element={<Resume />} />
-          <Route path='/contact' element={<Contact />} />
+          <Route path={routesObject.home.path} element={<Home />} />
+          <Route path={routesObject.projects.path} element={<Projects />} />
+          <Route path={routesObject.designs.path} element={<Designs />} />
+          <Route path={routesObject.resume.path} element={<Resume />} />
+          <Route path={routesObject.contact.path} element={<Contact />} />
         </Routes>
       </DarkMode.Provider>
     </div>
