@@ -88,7 +88,6 @@ $shadow-color2-dark: rgba(255, 255, 255, 0.76);
 }
 
 html {
-  border: 3px solid var(--prim-color);
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -98,9 +97,6 @@ html {
 }
 
 body {
-  font-family: $font-1;
-  background-color: var(--basic-color-white);
-  color: var(--sec-color);
   width: 100%;
   height: 100%;
   overflow-y: auto;
@@ -110,10 +106,20 @@ body {
   min-height: 100%;
 }
 
-#root, .app {
-  height: 100%;
+#root {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  border: 5px solid var(--prim-color);
+  font-family: $font-1;
+  background-color: var(--basic-color-white);
+  color: var(--sec-color);
 }
 
 li {
