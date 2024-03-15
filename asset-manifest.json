@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.2e32ed29.css",
+    "main.css": "/static/css/main.d0be027c.css",
     "main.js": "/static/js/main.365b8aba.js",
     "static/media/move_and_groove.png": "/static/media/move_and_groove.b821c4d5e9c707a24b07.png",
     "static/media/movie_festival.png": "/static/media/movie_festival.0fec095f729a81dea704.png",
@@ -63,11 +63,11 @@
     "static/media/moon.svg": "/static/media/moon.c741cd374c95bc4c5a0d436d9a47c322.svg",
     "static/media/empty_circle.svg": "/static/media/empty_circle.880879cc4ef200e79f3abceed1d232ed.svg",
     "static/media/circle.svg": "/static/media/circle.525dbfe62cde85ac0da7ffc4d1a69e2a.svg",
-    "main.2e32ed29.css.map": "/static/css/main.2e32ed29.css.map",
+    "main.d0be027c.css.map": "/static/css/main.d0be027c.css.map",
     "main.365b8aba.js.map": "/static/js/main.365b8aba.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e32ed29.css",
+    "static/css/main.d0be027c.css",
     "static/js/main.365b8aba.js"
   ]
 }
