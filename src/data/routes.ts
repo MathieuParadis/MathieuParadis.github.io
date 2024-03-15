@@ -5,7 +5,7 @@ export const routesObject: { [key: string | number | symbol]: RouteType } = {
   home: {
     id: '0',
     title: 'Home',
-    path: '/'
+    path: '/2022'
   },
   projects: {
     id: '1',

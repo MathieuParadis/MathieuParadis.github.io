@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 
 // REACT-ROUTER-DOM IMPORTS
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 
 // PAGES IMPORTS
 import Home from './pages/Home'
@@ -21,6 +21,7 @@ import DarkMode from './components/context/DarkMode'
 import { routesObject } from './data/routes'
 
 const App = (): JSX.Element => {
+  const location = useLocation()
   const [darkMode, setDarkMode] = useState(false)
   const body = document.querySelector('body') as HTMLElement
 
@@ -43,16 +44,26 @@ const App = (): JSX.Element => {
 
   return (
     <div className='app'>
-      <DarkMode.Provider value={{ darkMode, setDarkMode: switchMode }}>
-        <Navbar />
-        <Routes>
-          <Route path={routesObject.home.path} element={<Home />} />
-          <Route path={routesObject.projects.path} element={<Projects />} />
-          <Route path={routesObject.designs.path} element={<Designs />} />
-          <Route path={routesObject.resume.path} element={<Resume />} />
-          <Route path={routesObject.contact.path} element={<Contact />} />
-        </Routes>
-      </DarkMode.Provider>
+      {location.pathname.startsWith('/2022') &&
+        <div className='app-2022'>
+          <DarkMode.Provider value={{ darkMode, setDarkMode: switchMode }}>
+            <Navbar />
+            <Routes>
+              <Route path={routesObject.home.path} element={<Home />} />
+              <Route path={routesObject.projects.path} element={<Projects />} />
+              <Route path={routesObject.designs.path} element={<Designs />} />
+              <Route path={routesObject.resume.path} element={<Resume />} />
+              <Route path={routesObject.contact.path} element={<Contact />} />
+            </Routes>
+          </DarkMode.Provider>
+        </div>
+      }
+
+      {location.pathname.startsWith('/') &&
+        <div className=''>
+          yo
+        </div>
+      }
     </div>
   )
 }
