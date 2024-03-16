@@ -34,6 +34,7 @@ const MobileNavigation = (): JSX.Element => {
               to={route.path}
               className='menu-link'
               onClick={handleMenu}
+              end={true}
             >
               {route.title}
             </NavLink>
