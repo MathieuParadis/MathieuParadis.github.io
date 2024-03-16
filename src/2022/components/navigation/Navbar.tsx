@@ -44,7 +44,7 @@ const Navigation = (): JSX.Element => {
       <div className='flex justify-between'>
         <div className='nav-links hidden lg:flex items-center h-[50px] pr-4'>
           {routes.map((route): JSX.Element => {
-            return <NavLink key={route.id} to={route.path}>{route.title}</NavLink>
+            return <NavLink key={route.id} to={route.path} end>{route.title}</NavLink>
           })}
         </div>
         <DarkModeBtn />
