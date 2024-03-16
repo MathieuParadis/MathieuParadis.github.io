@@ -10,22 +10,22 @@ export const routesObject: { [key: string | number | symbol]: RouteType } = {
   projects: {
     id: '1',
     title: 'Projects',
-    path: '/projects'
+    path: '/2022/projects'
   },
   designs: {
     id: '2',
     title: 'Designs',
-    path: '/designs'
+    path: '/2022/designs'
   },
   resume: {
     id: '3',
     title: 'Resume',
-    path: '/resume'
+    path: '/2022/resume'
   },
   contact: {
     id: '4',
     title: 'Contact',
-    path: '/contact'
+    path: '/2022/contact'
   }
 }
 
