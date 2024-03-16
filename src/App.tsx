@@ -14,7 +14,7 @@ const App = (): JSX.Element => {
     <div className='app'>
       {location.pathname.startsWith('/2022') && <App2022 />}
 
-      {location.pathname.startsWith('/') && <App2024 />}
+      {!location.pathname.startsWith('/2022') && <App2024 />}
     </div>
   )
 }
