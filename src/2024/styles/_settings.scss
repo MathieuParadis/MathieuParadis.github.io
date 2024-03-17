@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ VARIABLES $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+// -------------------- FONTS VARIABLES -------------------- //
+$font-1: "Poppins", sans-serif;
+
+// -------------------- COLORS VARIABLES -------------------- //
+$basic-color-white:#ffffff;
+$basic-color-grey-light: #e5e5e5;
+$basic-color-grey-dark: #adb2b8;
+$basic-color-dark:#292929;
+
+// ----- DAY MODE ----- //
+$color-1: #42afaa;
+$color-1-lighter: #87ccc9;
+$color-1-darker: #31827f;
+$color-2: #000000;
+$color-3: #ef767a;
+$success: #5DA271;
+$success-bg: #d4edda;
+$danger: #fb3333;
+$danger-bg: #f8d7da;
+$warning: #efbb5b;
+$warning-bg: #fff3cd;
+$shadow-color1: rgba(0, 0, 0, 0.12);
+$shadow-color2: rgba(0, 0, 0, 0.24);
+
+// ----- NIGHT MODE (DARK) ----- //
+$color-1-dark: #42afaa;
+$color-1-lighter-dark: #87ccc9;
+$color-1-darker-dark: #348c88;
+$color-2-dark: #ffffff;
+$color-3-dark: #f9a0a4;
+$success-dark: #7db58d;
+$danger-dark: #fc5c5c;
+$warning-dark: #f1f173;
+$shadow-color1-dark: rgba(255, 255, 255, 0.88);
+$shadow-color2-dark: rgba(255, 255, 255, 0.76);
+
+
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+:root {
+  --basic-color-white:#{$basic-color-white};
+  --basic-color-grey-light:#{$basic-color-grey-light};
+  --basic-color-dark:#{$basic-color-dark};
+
+  --prim-color:#{$color-1};
+  --lighter-prim-color:#{$color-1-lighter};
+  --darker-prim-color:#{$color-1-darker};
+  --sec-color:#{$color-2};
+  --third-color:#{$color-3};
+  --success-color:#{$success};
+  --success-bg-color:#{$success-bg};
+  --danger-color:#{$danger};
+  --danger-bg-color:#{$danger-bg};
+  --warning-color:#{$warning};
+  --warning-bg-color:#{$warning-bg};
+  --shadow-color1:#{$shadow-color1};
+  --shadow-color2:#{$shadow-color2};
+}
+
+.dark-mode {
+  --basic-color-white:#{$basic-color-dark};
+  --basic-color-grey-light:#{$basic-color-grey-dark};
+  --basic-color-dark:#{$basic-color-white};
+
+  --prim-color:#{$color-1-dark};
+  --lighter-prim-color:#{$color-1-darker-dark};
+  --darker-prim-color:#{$color-1-lighter-dark};
+  --sec-color:#{$color-2-dark};
+  --third-color:#{$color-3-dark};
+  --success-color:#{$success};
+  --success-bg-color:#{$success-bg};
+  --danger-color:#{$danger};
+  --danger-bg-color:#{$danger-bg};
+  --warning-color:#{$warning};
+  --warning-bg-color:#{$warning-bg};
+  --shadow-color1:#{$shadow-color1-dark};
+  --shadow-color2:#{$shadow-color2-dark};
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+#root {
+  min-height: 100%;
+}
+
+#root, .app {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.app-2022 {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  border: 5px solid var(--prim-color);
+  font-family: $font-1;
+  background-color: var(--basic-color-white);
+  color: var(--sec-color);
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.blurr {
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+}

@@ -1,0 +1,30 @@
+.dark-mode-btn {
+  input[type=checkbox] {
+    display: none;
+  }
+
+  input[type=checkbox] + label, input[type=checkbox]:checked + label {
+    width: 30px;
+    display: inline-block;
+    transform: translateY(-5px);
+
+    @media screen and (max-width: theme('screens.lg')) {
+      display: none;
+    }
+  }
+} 
+
+.dark-mode-btn-mobile {
+  input[type=checkbox] {
+    display: none;
+  }
+
+  input[type=checkbox] + label, input[type=checkbox]:checked + label {
+    display: none;
+
+    @media screen and (max-width: theme('screens.lg')) {
+      width: 40px;
+      display: inline-block;
+    }
+  }
+} 
