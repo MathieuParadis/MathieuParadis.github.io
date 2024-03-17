@@ -5,27 +5,32 @@ export const routesObject: { [key: string | number | symbol]: RouteType } = {
   home: {
     id: '0',
     title: 'Home',
-    path: '/2022'
+    path: 'archive/2022'
   },
   projects: {
     id: '1',
     title: 'Projects',
-    path: '/2022/projects'
+    path: '/archive/2022/projects'
   },
   designs: {
     id: '2',
     title: 'Designs',
-    path: '/2022/designs'
+    path: '/archive/2022/designs'
   },
   resume: {
     id: '3',
     title: 'Resume',
-    path: '/2022/resume'
+    path: '/archive/2022/resume'
   },
   contact: {
     id: '4',
     title: 'Contact',
-    path: '/2022/contact'
+    path: '/archive/2022/contact'
+  },
+  archive: {
+    id: '4',
+    title: 'Archive',
+    path: '/archive'
   }
 }
 
@@ -34,5 +39,6 @@ export const routes: RouteType[] = [
   routesObject.projects,
   routesObject.designs,
   routesObject.resume,
-  routesObject.contact
+  routesObject.contact,
+  routesObject.archive
 ]

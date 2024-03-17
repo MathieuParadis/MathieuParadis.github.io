@@ -12,9 +12,9 @@ const App = (): JSX.Element => {
   const location = useLocation()
   return (
     <div className='app'>
-      {location.pathname.startsWith('/2022') && <App2022 />}
+      {location.pathname.startsWith('/archive/2022') && <App2022 />}
 
-      {!location.pathname.startsWith('/2022') && <App2024 />}
+      {!location.pathname.startsWith('/archive/2022') && <App2024 />}
     </div>
   )
 }
