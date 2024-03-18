@@ -7,6 +7,16 @@ export const routesObject: { [key: string | number | symbol]: RouteType } = {
     title: 'Home',
     path: '/'
   },
+  portfolio: {
+    id: '0',
+    title: 'Portfolio',
+    path: '/portfolio'
+  },
+  resume: {
+    id: '0',
+    title: 'Resume',
+    path: '/resume'
+  },
   archive: {
     id: '4',
     title: 'Archive',
@@ -16,5 +26,7 @@ export const routesObject: { [key: string | number | symbol]: RouteType } = {
 
 export const routes: RouteType[] = [
   routesObject.home,
+  routesObject.portfolio,
+  routesObject.resume,
   routesObject.archive
 ]
