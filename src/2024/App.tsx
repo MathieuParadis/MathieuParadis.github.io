@@ -7,6 +7,8 @@ import { Routes, Route } from 'react-router-dom'
 // PAGES IMPORTS
 import Archive from './pages/Archive'
 import Home from './pages/Home'
+import Portfolio from './pages/Portfolio'
+import Resume from './pages/Resume'
 
 // COMPONENTS IMPORTS
 import Navbar from './components/navigation/Navbar'
@@ -34,6 +36,8 @@ const App = (): JSX.Element => {
       <Navbar />
       <Routes>
         <Route path={routesObject.home.path} element={<Home />} />
+        <Route path={routesObject.portfolio.path} element={<Portfolio />} />
+        <Route path={routesObject.resume.path} element={<Resume />} />
         <Route path={routesObject.archive.path} element={<Archive />} />
       </Routes>
     </div>
